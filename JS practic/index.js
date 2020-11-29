@@ -61,7 +61,7 @@ const createItemTodo=(item, listTodo)=>{
     const itemTodo = document.createElement('li');
     const btnItem = document.createElement('button');
     itemTodo.classList.add('list-group-item', 'p-0' , 'mb-3', 'border-0');
-    btnItem.classList.add('list-item',  'btn' , 
+   btnItem.classList.add('list-item',  'btn' , 'border-dark',
      'btn-block',  'rounded-pill' , item.success ? 'btn-success' : 'border-light');
     btnItem.textContent = item.nameTodo;
     btnItem.id=item.id;
