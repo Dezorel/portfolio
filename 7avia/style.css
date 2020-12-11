@@ -75,6 +75,17 @@ form{
 	background-color:0043ab;
 	cursor:pointer;
 }
+.bg-form{
+	/* The image used */
+	background-image: url("images/avia9.jpg");
 
+	min-height: 380px;
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
 
 
