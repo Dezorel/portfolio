@@ -62,6 +62,10 @@ a:hover{
     margin-left: 140px;
     margin-right: 520px;
 }
+.item-card{
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 @media(max-width:570px)
 {
     body{
