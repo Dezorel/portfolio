@@ -3,6 +3,6 @@ html {
 	scroll-behavior: smooth;
 }
 .main-image{
-	box-shadow: 0em 0.1em rgba(122,122,122,0.5);
+	box-shadow: 1px 7px 10px -6px #7d7d7d;
 }
 
