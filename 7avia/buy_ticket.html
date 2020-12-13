@@ -34,24 +34,26 @@
 		</nav>
         <!--Конец навигационной панели-->
         
+
+
     <div class="row mt-4 mb-2">
       <div class="col" align="center">
         <h2>Заполните следующие поля для покупки билета</h2>
-        <p>Ваш рейс ...</p>
+        <p class="mt-5">Ваш рейс ...</p>
       </div>
     </div>
     <!--Форма покупки-->
-    <div>
+    <form>
       <div class="form-group row">
         <label for="example-text-input" class="col-2 col-form-label">Имя</label>
         <div class="col-10">
-          <input class="form-control" type="text" id="example-text-input">
+          <input class="form-control" type="text" id="example-text-input" required>
         </div>
       </div>
       <div class="form-group row">
         <label for="example-text-input" class="col-2 col-form-label">Фамилия</label>
         <div class="col-10">
-          <input class="form-control" type="text" id="example-text-input">
+          <input class="form-control" type="text" id="example-text-input" required>
         </div>
       </div>
       <div class="form-group row">
@@ -63,42 +65,29 @@
       <div class="form-group row">
         <label for="example-email-input" class="col-2 col-form-label">Email</label>
         <div class="col-10">
-          <input class="form-control" type="email" id="example-email-input">
+          <input class="form-control" type="email" id="example-email-input" required>
         </div>
       </div>
       <div class="form-group row">
         <label for="example-tel-input" class="col-2 col-form-label">Телефон</label>
         <div class="col-10">
-          <input class="form-control" type="tel" id="example-tel-input">
-        </div>
-      </div>
-      <div class="row mb-3">
-        <legend class="col-form-label col-sm-2 pt-0">Багаж</legend>
-        <div class="col-sm-10">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">Без багажа</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">С багажом (максимально 20кг)</label>
-          </div>
+          <input class="form-control" type="tel" id="example-tel-input" required>
         </div>
       </div>
       <div class="form-group row">
-        <label for="example-text-input" class="col-2 col-form-label">К оплате</label>
+        <label for="example-text-input" class="col-2 col-form-label">К оплате(указана стоимость)</label>
         <div class="col-10">
-          <input class="form-control" type="text" id="example-text-input">
+          <input class="form-control" type="text" id="example-text-input" required>
         </div>
       </div>
       <div class="form-row mt-4">
         <div class="col-md" align="center">
-			    <a class="btn btn-primary btn-lg" href="#otherpage" role="button">Купить билет</a>
+			    <button class="col-sm-4 btn btn-primary btn-lg" type="submit">Купить билет</button>
 			  </div>
       </div>
-    </div>
+    </form>
     <!--Конец формы покупки-->
-
+   
 
 
         <!--Конец бутстрап контэйнера-->
