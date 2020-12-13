@@ -37,7 +37,7 @@
 				  </li>
 			  </ul>
 			  <span class="navbar-text">
-				telephone: <a class="mr-5" href="tel:078113237"> 077-77-77-77</a>
+				telephone: <a class="mr-5" href="tel:077777777"> 077-77-77-77</a>
 				email:<a href="mailto:7avia@gmail.com">7avia@gmail.com</a>
 			  </span>
 			</div>
@@ -58,36 +58,36 @@
 					<div class="form-row mt-4">
 					  	<div class="col-md-3 mb-3">
 							<label for="validationCustom01" class="ml-2">Откуда</label>
-							<input type="text" class="form-control" id="validationCustom01" value="Кишинёв" required>
+							<input type="text" class="form-control" id="validationCustom01" name="from" value="Кишинёв" required>
 					  	</div>
 					  	<div class="col-md-3 mb-3">
 							<label for="validationCustom02" class="ml-2">Куда</label>
-							<input type="text" class="form-control" id="validationCustom02" required>
+							<input type="text" class="form-control" id="validationCustom02" name="to" required>
 					 	</div>
 					 	<div class="col-md-3 mb-3">
 							<label for="validationCustom03" class="ml-2">Вылет</label>
-							<input class="form-control" type="date" id="date-input1" required>
+							<input class="form-control" type="date" id="date-input1" name="depart" required>
 						</div>
 						<div class="col-md-3 mb-3">
 							<label for="validationCustom03" class="ml-2">Обратно</label>
-							<input class="form-control" type="date" id="date-input2" required>
+							<input class="form-control" type="date" id="date-input2" name="return" required>
 						</div>
 						<div class="col-md-3"></div>
 						<div class="col-md-3 mb-3">
 							<label for="validationCustom04" class="ml-2">Пассажир</label>
-							<select class="custom-select" id="validationCustom04" required>
+							<select class="custom-select" id="validationCustom04" name="passanger" required>
 								<option selected value="1">1 Пассажир</option>
 								<option value="2">2 Пассажира</option>
-								<option value="2">3 Пассажира</option>
-								<option value="2">1 Пассажир + младенец</option>
-								<option value="2">1 Пассажир + ребёнок</option>
-								<option value="2">2 Пассажира + младенец</option>
-								<option value="2">2 Пассажира + ребёнок</option>
+								<option value="3">3 Пассажира</option>
+								<option value="11">1 Пассажир + младенец</option>
+								<option value="12">1 Пассажир + ребёнок</option>
+								<option value="21">2 Пассажира + младенец</option>
+								<option value="22">2 Пассажира + ребёнок</option>
 							</select>
 						</div>
 						<div class="col-md-3 mb-3">
 							<label for="validationCustom04" class="ml-2">Багаж</label>
-							<select class="custom-select" id="validationCustom04" required>
+							<select class="custom-select" id="validationCustom04" name="baggage" required>
 								<option selected value="1">Ручная кладь</option>
 								<option value="2">С багажом (до 20кг)</option>
 								
@@ -146,7 +146,7 @@
 							так что отдых в Лондоне скучным ну никак не назовешь.</p>
 					  </div>
 					  <div class="card-footer">
-						<button type="button" class="btn btn-info">Подробнее</button>
+						<a class="btn btn-info" href="info.html" role="button">Подробнее</a>
 					  </div>
 					</div>
 					<div class="card">
@@ -160,7 +160,7 @@
 							не найдется.</p>
 					  </div>
 					  <div class="card-footer">
-						<button type="button" class="btn btn-info">Подробнее</button>
+						<a class="btn btn-info" href="info.html" role="button">Подробнее</a>
 					  </div>
 					</div>
 					<div class="card">
@@ -173,7 +173,7 @@
 							Ватикана. Закружиться в водовороте фресок Микеланджело и картин Леонардо.</p>
 					  </div>
 					  <div class="card-footer">
-						<button type="button" class="btn btn-info">Подробнее</button>
+						<a class="btn btn-info" href="info.html" role="button">Подробнее</a>
 					  </div>
 					</div>
 				  </div>
@@ -197,12 +197,12 @@
 			</div>
 			<p align="center">Забыли когда дата вылета или на куда летите? Проверьте данные о Вашем рейсе у нас на сайте!</p>
 			
-			<form class="needs-validation mt-4 ml-3 mr-3" novalidate>
+			<form class="needs-validation mt-4 ml-3 mr-3" action="info.html" novalidate>
 			  	<div class="form-row mt-4">
 					  <div class="col-md-3"></div>
 					<div class="col-md-6 mb-3">
 					  <label for="validationCustom01" class="ml-2">Номер билета</label>
-					  <input type="text" class="form-control" id="validationCustom01" required>
+					  <input type="text" class="form-control" id="validationCustom01" name="check" required>
 					</div>
 			  	</div>	
 			  	<div class="form-row mt-4">
@@ -247,7 +247,7 @@
 							дальность полета увеличена более чем на 30% по сравнению с основной модификацией.</p>
 				  	</div>
 				  	<div class="card-footer">
-						<button type="button" class="btn btn-info">Подробнее</button>
+						<a class="btn btn-info" href="info.html" role="button">Подробнее</a>
 				 	</div>
 				</div>
 				<div class="card">
@@ -259,7 +259,7 @@
 							на котором была установлена электродистанционная система управления.</p>
 				  	</div>
 				 	<div class="card-footer">
-						<button type="button" class="btn btn-info">Подробнее</button>
+						<a class="btn btn-info" href="info.html" role="button">Подробнее</a>
 				  	</div>
 				</div>
 			</div>
