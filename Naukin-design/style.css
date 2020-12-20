@@ -17,3 +17,47 @@ body{
 .nav-link:hover{
     
 }
+.nav-item{
+    margin-top: 40px;
+    margin-bottom: 52px;
+    margin-right: 64px;
+}
+@media(max-width:1550px){
+    
+    .nav-item{
+        margin-top: 40px;
+        margin-bottom: 52px;
+        margin-right: 32px;
+    }
+}
+@media(max-width:1300px){
+    
+    .nav-item{
+        margin-top: 40px;
+        margin-bottom: 52px;
+        margin-right: 16px;
+    }
+}
+@media(max-width:1155px){
+    
+    .nav-item{
+        margin-top: 40px;
+        margin-bottom: 52px;
+        margin-right: 8px;
+    }
+}
+@media(max-width:1100px){
+    
+    .nav-item{
+        margin-top: 40px;
+        margin-bottom: 52px;
+        margin-right: 0px;
+    }
+    .nav-link{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
