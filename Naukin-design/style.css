@@ -14,7 +14,20 @@ body{
     font-size: 16px;
     line-height: 20px;
 }
-
+h2{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 100%;
+}
+p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
 .nav-item{
     margin-top: 40px;
     margin-bottom: 52px;
@@ -23,6 +36,22 @@ body{
 .btn-order{
     margin-top: 0px;
 }
+.navbar{
+    max-height: 112px;
+}
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+.col{
+    padding: 0; 
+}
+
+
+
+
+
+
 @media(max-width:1550px){
     
     .nav-item{
@@ -60,6 +89,18 @@ body{
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
+    }
+}
+@media(max-width:990px){
+    
+    .nav-item{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-right: 0px;
+    }
+    .btn-order{
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 }
 @media(max-width:990px){
