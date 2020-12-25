@@ -53,7 +53,12 @@ p{
     margin-top: 244px;
  }
 
-
+.show{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    z-index: 2;
+}
 
 @media(max-width:1550px){
     
