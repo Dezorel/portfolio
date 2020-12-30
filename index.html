@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Leonid Septefrati. WEB Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="calculatorScript.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!--Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body style="background-color: #1A1B23">
+    <!-- Навигационная панель -->
+    <nav id="navigation" class="navbar navbar-expand-md navbar-dark" style="width: 100%; background-color: black;" >
+        <div class="container">
+            <a class="navbar-brand" href="#">Desorel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#service">Услуги</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Вопрос - ответ</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Блог</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Конец навигационной панели-->
+
+    <div class="container" id="up">
+
+
+        <!-- Главный экран -->
+        <div style="margin-top: 150px">
+            <div class="row">
+                <div class="col-md-8">
+                    <header>
+                        <h1> <span>Помогаю</span> малому и среднему бизнесу, стартапам качественно <span>выделиться среди конкурентов</span> с
+                            помощью современной подачи</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-1">
+                    <div class="text-white-50">Вёрстка</div>
+                </div>
+                <div class="col-md-1">
+                    <div class="text-white-50">Адаптив</div>
+                </div>
+                <div class="col-md-1">
+                    <div class="text-white-50">SPA</div>
+                </div>
+                <div class="col-md-1">
+                    <div class="text-white-50">Android</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-white-50">Тех.поддержка</div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец главного экрана -->
+
+
+        <!-- Проекты-->
+        <div style="margin-top: 250px" id="projects">
+            <h2>Проекты</h2>
+            <div class="row row-cols-1 row-cols-md-2 mt-4">
+
+                <div class="col mb-4">
+                    <div class="card text-white bg-dark">
+                        <img src="img/allert.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Allert</h5>
+                            <p class="card-text">Мобильное приложение предсказывающее природные катастрофы</p>
+                            <a href="https://2020.spaceappschallenge.org/challenges/inform/automated-detection-hazards/teams/nvg-1/project" class="btn btn-info">Подробнее</a>
+                            <!--github
+                            https://github.com/New-Vektor-Group/allerts
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card text-white bg-dark">
+                        <img src="img/7avia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">7avia</h5>
+                            <p class="card-text">Веб-сайт предназначенный для онлайн покупок авиабилетов. Сайт подключен к базам данных.
+                            </p>
+                            <a href="https://7brothers.ml/7avia/" class="btn btn-info">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card text-white bg-dark">
+                        <img src="img/theWitcher.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Witcher</h5>
+                            <p class="card-text">The Witcher — американо-польский фэнтезийный телесериал, снятый
+                                по мотивам одноименной серии романов Анджея Сапковского.</p>
+                            <a href="https://7brothers.ml/theWitcher/" class="btn btn-info">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!--Конец проект-->
+
+        <!--Услуги-->
+        <div style="margin-top: 70px" id="service">
+            <h2>Какие услуги я предоставляю?</h2>
+
+            <div class="row row-cols-1 row-cols-md-4 mt-4">
+
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 70px ">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Вёрстка</h5>
+                        <p class="card-text">Создание сайта с нуля по готовому макету. Создание функционала и необхожимых
+                        анимации. Загрузка сайта на хостинг. Покупка доменного имени (если есть необходимость)</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 70px ">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Адаптив</h5>
+                        <p class="card-text">Создание адаптивва для вашего сайта. Адаптив это правильное расположение
+                            элементов на разных устройствах (мобильных телефонах, планшетах, экранов телевизоров)</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; ">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">SPA</h5>
+                        <p class="card-text">Создание SPA с помощью фрэймворка Vue JS. SPA - "single page
+                            application" или же простым языком - одностраничное приложение.</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 70px ">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Android</h5>
+                        <p class="card-text">Разработка и создание android-приложения про готовому макету.</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; ">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Тех. поддержка</h5>
+                        <p class="card-text">Проверка сайта на ошибки и вирусы. Доработка и обновление компонентов сайта.</p>
+                    </div>
+                </div>
+
+            </div>
+        <!--Конец услуги-->
+        </div>
+
+        <!--Контакты-->
+        <div style="margin-top: 70px" id="contacts">
+            <h2>Оставить заявку</h2>
+            <div>
+                <h4 class="mt-3">Что нужно сделать?</h4>
+                <div class="row">
+
+                    <div class="col" >
+                        <button v-for="but in todoButtonList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
+                                type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="mt-3">Бюджет проекта</h4>
+                <div class="row">
+
+                    <div class="col">
+                        <button v-for="but in priceList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
+                                type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mt-3">Ваши данные</h4>
+            <form class="needs-validation mt-3" action="https://formspree.io/f/mleoozlo" method="post">
+
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" v-model="address" @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <textarea class="form-control" id="validationTextarea" @mousemove="checkForm" placeholder="Ваше сообщение"
+                                  name="message">{{message}}</textarea>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary" v-show="isSubmit"  type="submit">Отправить</button>
+
+            </form>
+        </div>
+        <!--Конец контакты-->
+        <footer class="">
+            <br><br>
+        </footer>
+
+    </div>
+    <!--Конец бутстрап контейнера-->
+
+
+    <a href="#navigation" style="position:fixed; right: 10px; bottom:15px"><img width="40px" src="img/arrow.svg" ></a>
+</body>
+</html>

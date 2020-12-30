@@ -1,0 +1,41 @@
+html {
+    scroll-behavior: smooth;
+}
+span{
+    background-color: yellow;
+    color: black;
+}
+header{
+    width: 100%;
+}
+header h1{
+    color: white;
+}
+label{
+    color: white;
+}
+h2{
+    color: white;
+}
+h4{
+    color: white;
+}
+.text-white-50{
+    text-align: center;
+}
+/*Для того что бы убрать выделение у кнопок*/
+.btn-cb:focus, .btn-cb:focus:active {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+
+@media (max-width: 992px) {
+    .text-white-50{
+        font-size: 12px;
+       text-align: left;
+    }
+}
