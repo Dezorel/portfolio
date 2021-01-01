@@ -1,8 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
+.container{
+    font-family: 'Montserrat', sans-serif;
+}
 span{
-    background-color: yellow;
+    background-color: #ffbf00;
     color: black;
 }
 header{
@@ -17,12 +20,20 @@ label{
 h2{
     color: white;
 }
+h1{
+    color: white;
+}
 h4{
     color: white;
+}
+p{
+    color: white;
+
 }
 .text-white-50{
     text-align: center;
 }
+
 /*Для того что бы убрать выделение у кнопок*/
 .btn-cb:focus, .btn-cb:focus:active {
     outline: none !important;

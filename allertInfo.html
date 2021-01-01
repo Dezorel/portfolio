@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--Vue-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+
+    <title>Info about project!</title>
+</head>
+<body style="background-color: #1A1B23">
+
+<!-- Навигационная панель -->
+<nav id="navigation" class="navbar navbar-expand-md navbar-dark" style="width: 100%; background-color: #121218" >
+    <div class="container">
+        <a class="navbar-brand" href="#">Dezorel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ml-3">
+                    <a class="nav-link" href="index.html">На главную</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Конец навигационной панели-->
+
+<div class="container" id="up">
+    <!--бустрап контэйнер-->
+
+    <div class="row" style="margin-top: 100px">
+        <div class="col-lg-6" align="center">
+            <h1 class="mt-5">Allert</h1>
+            <p class="mt-5">Приложение разрабатывалось для NASA International Space Apps challenge 2020</p>
+
+        </div>
+        <div class="col-lg-6" align="center">
+            <img src="img/allert.JPG">
+        </div>
+    </div>
+
+    <!--Поставленые цели, описание приложения, суть-->
+    <div style="margin-top: 200px">
+        <h4 >Предыстория:</h4>
+        <div class="row">
+            <div class="col-md-7">
+                <p>Хакатон длился 3 полных дня, 2 из которых предоставлялось на разработку приложения.
+                        Наша команда состояла из 6 человек. Моей ролью в команде было непосредственно
+                            создание android-приложения и необходимого функционала.
+                                Наша команда заняла призовое место на региональном уровне и стала глобальным номинантом.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Картинки с результатами-->
+    <div style="margin-top: 100px">
+        <h4 >Результат:</h4>
+        <div class="card-deck mt-4">
+
+            <div class="card bg-dark text-white">
+                <img src="img/allert/allert3_pptx.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+
+            <div class="card bg-dark text-white">
+                <img src="img/allert/allert2_pptx.png" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck mt-4">
+            <div class="card bg-dark text-white">
+                <img src="img/allert/Main.svg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="img/allert/Choose%20country.svg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck mt-4">
+            <div class="card bg-dark text-white">
+                <img src="img/allert/Alerts.svg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="img/allert/Overlay.svg" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Отзыв-->
+    <div style="margin-top: 100px">
+        <h4>Отзыв тим.лид. команды</h4>
+        <p>#отзыв</p>
+    </div>
+
+    <!--Подробнее о проекте-->
+    <div style="margin-top: 100px; margin-bottom: 20px;">
+        <h4>Подробнее о проекте</h4>
+        <p>Ознакомится с проектом можно по следующим ссылкам</p>
+        <a href=" https://2020.spaceappschallenge.org/challenges/inform/automated-detection-hazards/teams/nvg-1/project">Страница NASA Challenge</a>
+        <br>
+        <br>
+        <a href="https://github.com/New-Vektor-Group/allerts">GitHub</a>
+    </div>
+
+
+    <!--Конец бустрап контэйнера-->
+
+    <a href="#navigation" v-show="isUp" @click="checkUp" style="position:fixed; right: 10px; bottom:15px"><img width="40px" src="img/arrow.svg" ></a>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+</html>

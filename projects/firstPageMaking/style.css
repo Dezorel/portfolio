@@ -1,0 +1,40 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;  
+}
+.heronavbar{
+    margin-bottom: 95px;
+}
+a{
+    font-weight: 20px;
+    color: #2E353D;
+    font-weight: 650;
+    font-size: 18px;
+}
+.container{
+    min-width: 320px;
+}
+a:hover{
+    text-decoration: none;
+    color: #2E353D;
+}
+.rightimg{
+    border-radius: 10px;
+    filter: drop-shadow(0px 10px 25px rgba(103, 103, 103, 0.1));
+}
+@media(max-width:1023px){
+    .rightimg{
+        max-width: 320px;
+    }
+}
+@media(max-width:992px){
+    .rightimg{
+        padding-top: 70px;
+        max-width: 320px;
+    }
+}
+@media(max-width:550px){
+   .container{
+       min-width: 535px;
+   }
+}

@@ -17,8 +17,17 @@ class ButtonCheckBox {
                 app.message = app.message.replace(this.type +':'+ this.title, '');
             }
         }
+
     }
 }
+class ServicePost{
+    constructor(title, description) {
+        this.title = title
+       this.description = description
+    }
+}
+
+
 let app = new Vue({
     el: '#up',
     data: {
@@ -26,6 +35,7 @@ let app = new Vue({
         name: '',
         address: '',
         isSubmit: false,
+        isUp: false,
         todoButtonList:[
             new ButtonCheckBox(
                 'Лэндинг',
@@ -50,10 +60,6 @@ let app = new Vue({
                 'Бюджет'
             ),
             new ButtonCheckBox(
-                '50$',
-                'Бюджет'
-            ),
-            new ButtonCheckBox(
                 '80$',
                 'Бюджет'
             ),
@@ -62,21 +68,65 @@ let app = new Vue({
                 'Бюджет'
             ),
             new ButtonCheckBox(
+                '250$',
+                'Бюджет'
+            ),
+            new ButtonCheckBox(
+                '400$',
+                'Бюджет'
+            ),
+            new ButtonCheckBox(
                 'Неограниченный',
                 'Бюджет'
+            ),
+        ],
+        serviceList: [
+            new ServicePost(
+                'Вёрстка',
+                'Создание сайта с нуля по готовому макету. Создание функционала и необхожимых\n' +
+                '                        анимации. Загрузка сайта на хостинг. Покупка доменного имени (если есть необходимость)'
+            ),
+            new ServicePost(
+                'Адаптив',
+                'Создание адаптивва для вашего сайта. Адаптив это правильное расположение\n' +
+                '                            элементов на разных устройствах (мобильных телефонах, планшетах, экранов телевизоров)'
+            ),
+            new ServicePost(
+                'SPA',
+                'Создание SPA с помощью фрэймворка Vue JS. SPA - "single page\n' +
+                '                            application" или же простым языком - одностраничное приложение.'
+            ),
+            new ServicePost(
+                'Android',
+                'Разработка и создание android-приложения про готовому макету.'
+            ),
+            new ServicePost(
+                'Тех. поддержка',
+                'Проверка сайта на ошибки и вирусы. Доработка и обновление компонентов сайта.'
             ),
         ],
     },
     methods:{
         checkForm(){
             if(this.name.length > 0 && this.address.length >0 && this.message.length > 0){
-                console.log(1)
                 this.isSubmit = true
             }
             else{
-                console.log(2)
                 this.isSubmit = false
             }
-        }
+        },
+        checkUp(){
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            //console.log( "Текущая прокрутка: " + scrollTop )
+            if(scrollTop < 300){
+                this.isUp = false
+
+            }
+            else{
+                this.isUp = true
+
+            }
+        },
     }
 })
