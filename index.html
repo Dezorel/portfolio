@@ -116,13 +116,19 @@
                         <img src="img/7avia.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">7avia</h5>
+<<<<<<< Updated upstream
                             <p class="card-text">Веб-сайт предназначенный для онлайн покупок авиабилетов. Сайт подключен к базам данных.
                             </p>
                             <a href="https://7brothers.ml/projects/7avia/" class="btn btn-warning">Подробнее</a>
+=======
+                            <p class="card-text">Веб-сайт предназначенный для онлайн покупок авиабилетов.
+                                                    Сайт подключен к базам данных.</p>
+                            <a href="7aviaInfo.html" class="btn btn-warning">Подробнее</a>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
-
+                <!--
                 <div class="col mb-4">
                     <div class="card text-white bg-dark h-100">
                         <img src="img/theWitcher.JPG" class="card-img-top" alt="...">
@@ -134,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-
+                -->
 
             </div>
 
@@ -168,7 +174,7 @@
                 <h4 class="mt-5">Что нужно сделать?</h4>
                 <div class="row">
 
-                    <div class="col" >
+                    <div class="col-lg-7" >
                         <button v-for="but in todoButtonList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
                                 type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
@@ -178,7 +184,7 @@
                 <h4 class="mt-5">Бюджет проекта</h4>
                 <div class="row">
 
-                    <div class="col">
+                    <div class="col-lg-7">
                         <button v-for="but in priceList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
                                 type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
@@ -188,19 +194,19 @@
             <form class="needs-validation mt-3" action="https://formspree.io/f/mleoozlo" method="post">
 
                 <div class="form-row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 mb-3">
                         <label for="validationText">Ваше имя</label>
                         <input type="text" id="validationText" class="form-control" v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 mb-3">
                         <label for="validationText">Как с вами связаться?</label>
                         <input type="text" class="form-control" v-model="address" @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-lg-6 mb-3">
                         <label for="validationText">Ваше сообщение</label>
                         <textarea class="form-control" id="validationTextarea" @mousemove="checkForm" placeholder="Ваше сообщение"
                                   name="message">{{message}}</textarea>
