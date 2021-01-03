@@ -38,10 +38,10 @@
                         <a class="nav-link" href="#service">Услуги</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link disabled" href="#">Вопрос - ответ</a>
+                        <a class="nav-link" href="#faq">Вопрос - ответ</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link disabled" href="#">Отзывы</a>
+                        <a class="nav-link" href="reviews.html">Отзывы</a>
                     </li>
                     <li class="nav-item ml-3">
                         <a class="nav-link disabled" href="#">Блог</a>
@@ -119,7 +119,6 @@
                             <p class="card-text">Веб-сайт предназначенный для онлайн покупок авиабилетов.
                                                     Сайт подключен к базам данных.</p>
                             <a href="7aviaInfo.html" class="btn btn-warning">Подробнее</a>
-
                         </div>
                     </div>
                 </div>
@@ -162,6 +161,24 @@
         <!--Конец услуги-->
         </div>
 
+        <!--Вопрос-ответ-->
+        <div style="margin-top: 70px" id="faq">
+        <h2>Вопрос - ответ</h2>
+            <div class="row row-cols-1 row-cols-lg-3 mt-4">
+
+                <div class="col mb-4" v-for="faq in faqList" >
+                    <div class="card text-white bg-dark h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Вопроc: {{faq.title}}</h5>
+                            <p class="card-text mt-4">Ответ: {{faq.description}}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
         <!--Контакты-->
         <div style="margin-top: 70px" id="contacts">
             <h2>Оставить заявку</h2>
@@ -170,7 +187,8 @@
                 <div class="row">
 
                     <div class="col-lg-7" >
-                        <button v-for="but in todoButtonList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
+                        <button v-for="but in todoButtonList" @click='but.changeStyle()'
+                                v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
                                 type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
                 </div>
@@ -180,7 +198,8 @@
                 <div class="row">
 
                     <div class="col-lg-7">
-                        <button v-for="but in priceList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
+                        <button v-for="but in priceList" @click='but.changeStyle()'
+                                v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
                                 type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
                 </div>
@@ -191,13 +210,15 @@
                 <div class="form-row">
                     <div class="col-lg-6 mb-3">
                         <label for="validationText">Ваше имя</label>
-                        <input type="text" id="validationText" class="form-control" v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
+                        <input type="text" id="validationText" class="form-control"
+                               v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-lg-6 mb-3">
                         <label for="validationText">Как с вами связаться?</label>
-                        <input type="text" class="form-control" v-model="address" @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
+                        <input type="text" class="form-control" v-model="address"
+                               @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
                     </div>
                 </div>
                 <div class="form-row">
