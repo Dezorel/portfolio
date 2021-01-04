@@ -17,29 +17,92 @@
         <div class="container">
 
             <!--Навигацонная панель-->
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="margin-top: 25px;">
+                <a class="navbar-brand" href="#" style="margin-right: 60px;"><img src="images/logo.svg"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
             
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="#description" >Описание</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                         <a class="nav-link" href="#trailer">Трейлер</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#comments">Отзывы</a>
                     </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li> <a href="https://twitter.com/witchernetflix"> <img src="images/twitter.svg" class="society" ></a></li>
+                    <li><a href="https://www.instagram.com/witchernetflix/?hl=ru"> <img src="images/instagram.svg" class="society"></a></li>
+                    <li><a href="https://www.facebook.com/witchernetflix/"> <img src="images/facebook.svg" class="society"></a></li>
                 </ul>
                 </div>
             </nav>
             <!--Крнец навигацонной панели-->
 
 
+            <!--Описание-->
+            <div class="row">
+                <div class="col-lg-5">
+                    <p style="margin-top: 60px;">2019, фентези</p>
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/star.svg" alt="">
+                    <img src="images/nullstar.svg" alt="">
+                    <img src="images/nullstar.svg" alt="">
+                    <img src="images/nullstar.svg" alt="">
+                    <a href="https://www.rottentomatoes.com/tv/the_witcher/s01" style="margin-left: 10px;">7/10</a>
+                    <h1  style="margin-top: 13px;">Ведьмак</h1>
+                    <p>Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. 
+                        За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти —
+                         хоть от чудищ болотных, оборотней и даже заколдованных принцесс. </p>
+                </div>
+                <!--Кнопка плэй на больших экранах-->
+                <div class="col-lg-4">
+                    <a href="https://kinogo.zone/fantasy/623-vedmak.html" class="btn play" role="button" > <img src="images/play.svg" alt="play"></a>
+                </div>
+            </div>
+
+
+            <!--Кнопка смотреть онлайн-->
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="https://www.netflix.com/md-ru/title/80189685" class="btn btn-danger btn-lg btn-block" role="button" aria-pressed="true">Смотреть онлайн</a>
+                </div>
+            </div>
+
+            <!--Карусель-->
+            <div class="row" style="margin-top: 35px">
+                <div class="col-sm-3">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="images/card-image.svg" class="w-100" alt="...">
+                            <p class="carousel-title">Серия #1</p>
+                            <p class="carousel-descriprion">Начало пути </p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="images/card-image1.svg" class="d-block w-100" alt="...">
+                            <p class="carousel-title">Серия #2</p>
+                            <p class="carousel-descriprion">Четыре знака</p>
+                          </div>
+                        </div>
+                        <a class="carousel-control-next carousel-arrow" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span aria-hidden="true"><img src="images/arrow.svg" alt=""></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+            </div>
+        
 
 
         </div>
