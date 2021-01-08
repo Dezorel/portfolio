@@ -13,7 +13,15 @@
     max-width: 265px;
     max-height: 67px;   
 }
-
+.shop{
+    background-color: #FBF6ED;
+}
+.btn-outline-danger{
+    border-radius: 30px !important;
+}
+.btn-danger{
+    border-radius: 30px !important;
+}
 @media(max-width:1000px){
     .logo{
         margin-right: 0px;
