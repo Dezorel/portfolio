@@ -19,7 +19,7 @@
 .footer{
     background: url('images/bg-footer.jpg') no-repeat top center / cover;
     padding-bottom: 300px;
-    padding-top: 300px;
+    padding-top: 100px;
 }
 .btn-outline-danger{
     border-radius: 30px !important;
