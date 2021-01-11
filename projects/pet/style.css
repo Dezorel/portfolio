@@ -27,6 +27,13 @@
 .btn-danger{
     border-radius: 30px !important;
 }
+.card{
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.card-text-header{
+    font-size: 13px;
+}
 @media(max-width:1000px){
     .logo{
         margin-right: 0px;
