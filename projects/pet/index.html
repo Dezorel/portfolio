@@ -118,6 +118,7 @@
     <div class="shop" style="margin-top: 100px;">
         <div class="container">
             <h2 style="padding-top: 100px;"> <b>Каталог животных</b> </h2>
+            <!--
             <div class="row" align='center' style="margin-top: 50px;">
                 <div class="col-lg-2"><a href="#" class="btn btn-danger">Все</a></div>
                 <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Собаки</a></div>
@@ -126,6 +127,50 @@
                 <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Хомяки</a></div>
                 <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Обезьяны</a></div>
             </div>
+-->
+            <!--Группа списков-->
+            <div class="row">
+                <div class="col">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <ul class="nav nav-tabs">
+                            <!-- Первая вкладка (активная) -->
+                            <li class="nav-item" style="margin-right: 100px; margin-left: 30px;">
+                                <a class="list-group-item list-group-item-action active btn btn-outline-danger" id="list-all-list" data-toggle="list" href="#list-all" role="tab" aria-controls="home">Все</a>
+                            </li>
+                            <!-- Вторая вкладка -->
+                            <li class="nav-item" style="margin-right: 100px;">
+                                <a class="list-group-item list-group-item-action btn btn-outline-danger" id="list-dog-list" data-toggle="list" href="#list-dog" role="tab" aria-controls="profile">Собаки</a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 100px;">
+                                <a class="list-group-item list-group-item-action btn btn-outline-danger" id="list-cat-list" data-toggle="list" href="#list-cat" role="tab" aria-controls="messages">Кошки</a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 100px;">
+                                <a class="list-group-item list-group-item-action btn btn-outline-danger" id="list-popug-list" data-toggle="list" href="#list-popug" role="tab" aria-controls="settings">Попугаи</a>
+                            </li>
+                            <li class="nav-item" style="margin-right: 100px;">
+                                <a class="list-group-item list-group-item-action btn btn-outline-danger" id="list-hamster-list" data-toggle="list" href="#list-hamster" role="tab" aria-controls="settings">Хомяки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="list-group-item list-group-item-action btn btn-outline-danger" id="list-monkey-list" data-toggle="list" href="#list-monkey" role="tab" aria-controls="settings">Обезьяны</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-all" role="tabpanel" aria-labelledby="list-home-list">all</div>
+                    <div class="tab-pane fade" id="list-dog" role="tabpanel" aria-labelledby="list-profile-list">dog</div>
+                    <div class="tab-pane fade" id="list-cat" role="tabpanel" aria-labelledby="list-messages-list">cat</div>
+                    <div class="tab-pane fade" id="list-popug" role="tabpanel" aria-labelledby="list-settings-list">popug</div>
+                    <div class="tab-pane fade" id="list-hamster" role="tabpanel" aria-labelledby="list-settings-list">hamster</div>
+                    <div class="tab-pane fade" id="list-monkey" role="tabpanel" aria-labelledby="list-settings-list">monkey</div>
+                    </div>
+                </div>
+            </div>
+            <!--Конец группы списков-->
+
 
             <!--Slider-->
             <div class="mt-3" id="slider">
