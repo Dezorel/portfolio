@@ -6,6 +6,9 @@
 .logo{
     margin-right: 60px;
 }
+.nav-tabs {
+     border-bottom: 0px; 
+}
 .btn-pet{
     background: linear-gradient(102.4deg, #F52557 36.84%, #ED1C4E 74.32%);
     box-shadow: 0px 7px 35px rgba(242, 34, 84, 0.42);
