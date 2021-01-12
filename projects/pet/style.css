@@ -8,6 +8,18 @@
 }
 .nav-tabs {
      border-bottom: 0px; 
+     margin-left: 100px;
+}
+.nav-item-list-group{
+    margin-right: 70px;
+}
+@media(max-width:769px){
+    .nav-item-list-group{
+        margin-right: 0px;
+    }
+    .nav-tabs{
+        margin-left: 45px;
+    }
 }
 .btn-pet{
     background: linear-gradient(102.4deg, #F52557 36.84%, #ED1C4E 74.32%);
