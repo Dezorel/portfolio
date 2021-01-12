@@ -115,19 +115,9 @@
     <!--Конец About us-->
 
     <!--shop-->
-    <div class="shop" style="margin-top: 100px;">
+    <div class="shop" id="shop" style="margin-top: 100px;">
         <div class="container">
             <h2 style="padding-top: 100px;"> <b>Каталог животных</b> </h2>
-            <!--
-            <div class="row" align='center' style="margin-top: 50px;">
-                <div class="col-lg-2"><a href="#" class="btn btn-danger">Все</a></div>
-                <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Собаки</a></div>
-                <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Кошки</a></div>
-                <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Попугаи</a></div>
-                <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Хомяки</a></div>
-                <div class="col-lg-2"><a href="#" class="btn btn-outline-danger">Обезьяны</a></div>
-            </div>
--->
             <!--Группа списков-->
             <div class="row">
                 <div class="col">
@@ -161,378 +151,379 @@
                 <div class="col-12">
                     <div class="tab-content" id="nav-tabContent">
                         <!--Контент "все"-->
-                    <div class="tab-pane fade show active" id="list-all" role="tabpanel" aria-labelledby="list-home-list">
-                         <!--Slider-->
-                        <div class="mt-3" id="slider">
-                        <!--Carousel Wrapper-->
-                            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-                                <!--Controls-->
-                                <div class="row">
-                                    <div class="col mb-3" align='center'>
-                                        <div class="row justify-content-around align-items-center">
-                                            <a class="col-1 btn" href="#multi-item-example" data-slide="prev">
-                                                <img style="width: 50%;" src="images/left.svg">
-                                            </a>
+                        <div class="tab-pane fade show active" id="list-all" role="tabpanel" aria-labelledby="list-home-list">
+                            <!--Slider-->
+                            <div class="mt-3" id="slider">
+                            <!--Carousel Wrapper-->
+                                <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                                    <!--Controls-->
+                                    <div class="row">
+                                        <div class="col mb-3" align='center'>
+                                            <div class="row justify-content-around align-items-center">
+                                                <a class="col-1 btn" href="#multi-item-example" data-slide="prev">
+                                                    <img style="width: 50%;" src="images/left.svg">
+                                                </a>
 
-                                            <div class="col">
-                                                    <!--Slides-->
-                                                        <div class="carousel-inner" role="listbox">
+                                                <div class="col">
+                                                        <!--Slides-->
+                                                            <div class="carousel-inner" role="listbox">
 
-                                                            <!--First slide-->
-                                                            <div class="carousel-item active">
-                                        
-                                                                <div class="row">
+                                                                <!--First slide-->
+                                                                <div class="carousel-item active">
+                                            
+                                                                    <div class="row">
+                                                                        <div class="col-md-4">
+                                                                            <div class="card mb-2">
+                                                                                <!--Header cards-->
+                                                                                <div class="mt-3">
+                                                                                    <div class="row ml-1 align-items-center">
+                                                                                        <div class="col-4 card-text-header">4 месяца</div>
+                                                                                        <div class="col-4 card-text-header">2 награды</div>
+                                                                                        <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--Конец Header cards-->
+                                                                                <div class="w-75 ml-auto mr-auto">
+                                                                                    <img class="card-img-top"  src="images/dob.jpg" alt="Card image cap">
+                                                                                </div>
+                                                                            <div class="card-body">
+                                                                                <h4 class="card-title" align="left"><b>Доберман</b></h4>
+                                                                                <p class="card-text" align="left">Отличный новый друг для всей семьи, охраняет и обожает</p>
+                                                                                <div class="row">
+                                                                                    <div class="col-6">
+                                                                                        <img src="images/EllipseYellow.jpg"> Собака
+                                                                                    </div>
+                                                                                    <div class="col-6">
+                                                                                        <img src="images/EllipsePurple.jpg"> Хищник
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row" style="margin-top: 15px;">
+                                                                                    <div class="col"><h4 style="color: green;"><b>5 900</b></p></div>
+                                                                                    <div class="col-5">
+                                                                                        <img src="images/imprint.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                            
+                                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                                            <div class="card mb-2">
+                                                                                <!--Header cards-->
+                                                                                <div class="mt-3">
+                                                                                    <div class="row ml-1 align-items-center">
+                                                                                        <div class="col-4 card-text-header">7 месяцев</div>
+                                                                                        <div class="col-4 card-text-header">3 награды</div>
+                                                                                        <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--Конец Header cards-->
+                                                                                <div class="w-75 ml-auto mr-auto">
+                                                                                    <img class="card-img-top"  src="images/cat.jpg" alt="Card image cap">
+                                                                                </div>
+                                                                            <div class="card-body">
+                                                                                <h4 class="card-title" align="left"><b>Вислоухая кошка</b></h4>
+                                                                                <p class="card-text" align="left">Прекрасная подруга на дождливые холодные времена</p>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <img src="images/EllipseYellow.jpg"> Кошка
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <img src="images/EllipsePurple.jpg"> Мышкоед.
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row" style="margin-top: 15px;">
+                                                                                    <div class="col"><h4 style="color: green;"><b>7 200</b></p></div>
+                                                                                    <div class="col-5">
+                                                                                        <img src="images/imprint.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                            
+                                                                        <div class="col-md-4 clearfix d-none d-md-block">
+                                                                            <div class="card mb-2">
+                                                                                <!--Header cards-->
+                                                                                <div class="mt-3">
+                                                                                    <div class="row ml-1 align-items-center">
+                                                                                        <div class="col-4 card-text-header">7 месяцев</div>
+                                                                                        <div class="col-4 card-text-header">3 награды</div>
+                                                                                        <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <!--Конец Header cards-->
+                                                                                <div class="w-75 ml-auto mr-auto">
+                                                                                    <img class="card-img-top"  src="images/monkey.jpg" alt="Card image cap">
+                                                                                </div>
+                                                                            <div class="card-body">
+                                                                                <h4 class="card-title" align="left"><b>Шимпанзе</b></h4>
+                                                                                <p class="card-text" align="left">Домашний питомец для тех, кому не хочется скучать</p>
+                                                                                <div class="row">
+                                                                                    <div class="col-md-6">
+                                                                                        <img src="images/EllipseYellow.jpg"> Обезьяна
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <img src="images/EllipsePurple.jpg"> Травояд.
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="row" style="margin-top: 15px;">
+                                                                                    <div class="col"><h4 style="color: green;"><b>12 500</b></p></div>
+                                                                                    <div class="col-5">
+                                                                                        <img src="images/imprint.jpg" alt="">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                            
+                                                                </div>
+                                                                <!--/.First slide-->
+                                            
+                                                            <!--Second slide-->
+                                                                <div class="carousel-item">
+
+                                                                    <div class="row">
                                                                     <div class="col-md-4">
                                                                         <div class="card mb-2">
-                                                                            <!--Header cards-->
-                                                                            <div class="mt-3">
-                                                                                <div class="row ml-1 align-items-center">
-                                                                                    <div class="col-4 card-text-header">4 месяца</div>
-                                                                                    <div class="col-4 card-text-header">2 награды</div>
-                                                                                    <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--Конец Header cards-->
-                                                                            <div class="w-75 ml-auto mr-auto">
-                                                                                <img class="card-img-top"  src="images/dob.jpg" alt="Card image cap">
-                                                                            </div>
-                                                                        <div class="card-body">
-                                                                            <h4 class="card-title" align="left"><b>Доберман</b></h4>
-                                                                            <p class="card-text" align="left">Отличный новый друг для всей семьи, охраняет и обожает</p>
-                                                                            <div class="row">
-                                                                                <div class="col-6">
-                                                                                    <img src="images/EllipseYellow.jpg"> Собака
-                                                                                </div>
-                                                                                <div class="col-6">
-                                                                                    <img src="images/EllipsePurple.jpg"> Хищник
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row" style="margin-top: 15px;">
-                                                                                <div class="col"><h4 style="color: green;"><b>5 900</b></p></div>
-                                                                                <div class="col-5">
-                                                                                    <img src="images/imprint.jpg" alt="">
-                                                                                </div>
+                                                                        <!--Header cards-->
+                                                                        <div class="mt-3">
+                                                                            <div class="row ml-1 align-items-center">
+                                                                                <div class="col-4 card-text-header">7 месяцев</div>
+                                                                                <div class="col-4 card-text-header">3 награды</div>
+                                                                                <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
                                                                             </div>
                                                                         </div>
+                                                                        <!--Конец Header cards-->
+                                                                        <div class="w-75 ml-auto mr-auto">
+                                                                            <img class="card-img-top"  src="images/monkey.jpg" alt="Card image cap">
+                                                                        </div>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title" align="left"><b>Шимпанзе</b></h4>
+                                                                        <p class="card-text" align="left">Домашний питомец для тех, кому не хочется скучать</p>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipseYellow.jpg"> Обезьяна
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipsePurple.jpg"> Травояд.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" style="margin-top: 15px;">
+                                                                            <div class="col"><h4 style="color: green;"><b>12 500</b></p></div>
+                                                                            <div class="col-5">
+                                                                                <img src="images/imprint.jpg" alt="">
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                        
+                                                                        </div>
+                                                                    </div>
+
                                                                     <div class="col-md-4 clearfix d-none d-md-block">
                                                                         <div class="card mb-2">
-                                                                            <!--Header cards-->
-                                                                            <div class="mt-3">
-                                                                                <div class="row ml-1 align-items-center">
-                                                                                    <div class="col-4 card-text-header">7 месяцев</div>
-                                                                                    <div class="col-4 card-text-header">3 награды</div>
-                                                                                    <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--Конец Header cards-->
-                                                                            <div class="w-75 ml-auto mr-auto">
-                                                                                <img class="card-img-top"  src="images/cat.jpg" alt="Card image cap">
-                                                                            </div>
-                                                                        <div class="card-body">
-                                                                            <h4 class="card-title" align="left"><b>Вислоухая кошка</b></h4>
-                                                                            <p class="card-text" align="left">Прекрасная подруга на дождливые холодные времена</p>
-                                                                            <div class="row">
-                                                                                <div class="col-md-6">
-                                                                                    <img src="images/EllipseYellow.jpg"> Кошка
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <img src="images/EllipsePurple.jpg"> Мышкоед.
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row" style="margin-top: 15px;">
-                                                                                <div class="col"><h4 style="color: green;"><b>7 200</b></p></div>
-                                                                                <div class="col-5">
-                                                                                    <img src="images/imprint.jpg" alt="">
-                                                                                </div>
+                                                                        <!--Header cards-->
+                                                                        <div class="mt-3">
+                                                                            <div class="row ml-1 align-items-center">
+                                                                                <div class="col-4 card-text-header">4 месяца</div>
+                                                                                <div class="col-4 card-text-header">2 награды</div>
+                                                                                <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
                                                                             </div>
                                                                         </div>
+                                                                        <!--Конец Header cards-->
+                                                                        <div class="w-75 ml-auto mr-auto">
+                                                                            <img class="card-img-top"  src="images/dob.jpg" alt="Card image cap">
+                                                                        </div>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title" align="left"><b>Доберман</b></h4>
+                                                                        <p class="card-text" align="left">Отличный новый друг для всей семьи, охраняет и обожает</p>
+                                                                        <div class="row">
+                                                                            <div class="col-6">
+                                                                                <img src="images/EllipseYellow.jpg"> Собака
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <img src="images/EllipsePurple.jpg"> Хищник
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" style="margin-top: 15px;">
+                                                                            <div class="col"><h4 style="color: green;"><b>5 900</b></p></div>
+                                                                            <div class="col-5">
+                                                                                <img src="images/imprint.jpg" alt="">
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                        
+                                                                        </div>
+                                                                    </div>
+
                                                                     <div class="col-md-4 clearfix d-none d-md-block">
                                                                         <div class="card mb-2">
-                                                                            <!--Header cards-->
-                                                                            <div class="mt-3">
-                                                                                <div class="row ml-1 align-items-center">
-                                                                                    <div class="col-4 card-text-header">7 месяцев</div>
-                                                                                    <div class="col-4 card-text-header">3 награды</div>
-                                                                                    <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--Конец Header cards-->
-                                                                            <div class="w-75 ml-auto mr-auto">
-                                                                                <img class="card-img-top"  src="images/monkey.jpg" alt="Card image cap">
-                                                                            </div>
-                                                                        <div class="card-body">
-                                                                            <h4 class="card-title" align="left"><b>Шимпанзе</b></h4>
-                                                                            <p class="card-text" align="left">Домашний питомец для тех, кому не хочется скучать</p>
-                                                                            <div class="row">
-                                                                                <div class="col-md-6">
-                                                                                    <img src="images/EllipseYellow.jpg"> Обезьяна
-                                                                                </div>
-                                                                                <div class="col-md-6">
-                                                                                    <img src="images/EllipsePurple.jpg"> Травояд.
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="row" style="margin-top: 15px;">
-                                                                                <div class="col"><h4 style="color: green;"><b>12 500</b></p></div>
-                                                                                <div class="col-5">
-                                                                                    <img src="images/imprint.jpg" alt="">
-                                                                                </div>
+                                                                        <!--Header cards-->
+                                                                        <div class="mt-3">
+                                                                            <div class="row ml-1 align-items-center">
+                                                                                <div class="col-4 card-text-header">7 месяцев</div>
+                                                                                <div class="col-4 card-text-header">3 награды</div>
+                                                                                <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
                                                                             </div>
                                                                         </div>
+                                                                        <!--Конец Header cards-->
+                                                                        <div class="w-75 ml-auto mr-auto">
+                                                                            <img class="card-img-top"  src="images/cat.jpg" alt="Card image cap">
+                                                                        </div>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title" align="left"><b>Вислоухая кошка</b></h4>
+                                                                        <p class="card-text" align="left">Прекрасная подруга на дождливые холодные времена</p>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipseYellow.jpg"> Кошка
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipsePurple.jpg"> Мышкоед.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" style="margin-top: 15px;">
+                                                                            <div class="col"><h4 style="color: green;"><b>7 200</b></p></div>
+                                                                            <div class="col-5">
+                                                                                <img src="images/imprint.jpg" alt="">
+                                                                            </div>
                                                                         </div>
                                                                     </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+
                                                                 </div>
-                                        
+                                                                <!--/.Second slide-->
+
+                                                                <!--Third slide-->
+                                                                <div class="carousel-item">
+
+                                                                    <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="card mb-2">
+                                                                        <!--Header cards-->
+                                                                        <div class="mt-3">
+                                                                            <div class="row ml-1 align-items-center">
+                                                                                <div class="col-4 card-text-header">7 месяцев</div>
+                                                                                <div class="col-4 card-text-header">3 награды</div>
+                                                                                <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--Конец Header cards-->
+                                                                        <div class="w-75 ml-auto mr-auto">
+                                                                            <img class="card-img-top"  src="images/cat.jpg" alt="Card image cap">
+                                                                        </div>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title" align="left"><b>Вислоухая кошка</b></h4>
+                                                                        <p class="card-text" align="left">Прекрасная подруга на дождливые холодные времена</p>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipseYellow.jpg"> Кошка
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipsePurple.jpg"> Мышкоед.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" style="margin-top: 15px;">
+                                                                            <div class="col"><h4 style="color: green;"><b>7 200</b></p></div>
+                                                                            <div class="col-5">
+                                                                                <img src="images/imprint.jpg" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4 clearfix d-none d-md-block">
+                                                                        <div class="card mb-2">
+                                                                        <!--Header cards-->
+                                                                        <div class="mt-3">
+                                                                            <div class="row ml-1 align-items-center">
+                                                                                <div class="col-4 card-text-header">7 месяцев</div>
+                                                                                <div class="col-4 card-text-header">3 награды</div>
+                                                                                <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--Конец Header cards-->
+                                                                        <div class="w-75 ml-auto mr-auto">
+                                                                            <img class="card-img-top"  src="images/monkey.jpg" alt="Card image cap">
+                                                                        </div>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title" align="left"><b>Шимпанзе</b></h4>
+                                                                        <p class="card-text" align="left">Домашний питомец для тех, кому не хочется скучать</p>
+                                                                        <div class="row">
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipseYellow.jpg"> Обезьяна
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <img src="images/EllipsePurple.jpg"> Травояд.
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" style="margin-top: 15px;">
+                                                                            <div class="col"><h4 style="color: green;"><b>12 500</b></p></div>
+                                                                            <div class="col-5">
+                                                                                <img src="images/imprint.jpg" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4 clearfix d-none d-md-block">
+                                                                        <div class="card mb-2">
+                                                                        <!--Header cards-->
+                                                                        <div class="mt-3">
+                                                                            <div class="row ml-1 align-items-center">
+                                                                                <div class="col-4 card-text-header">4 месяца</div>
+                                                                                <div class="col-4 card-text-header">2 награды</div>
+                                                                                <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <!--Конец Header cards-->
+                                                                        <div class="w-75 ml-auto mr-auto">
+                                                                            <img class="card-img-top"  src="images/dob.jpg" alt="Card image cap">
+                                                                        </div>
+                                                                    <div class="card-body">
+                                                                        <h4 class="card-title" align="left"><b>Доберман</b></h4>
+                                                                        <p class="card-text" align="left">Отличный новый друг для всей семьи, охраняет и обожает</p>
+                                                                        <div class="row">
+                                                                            <div class="col-6">
+                                                                                <img src="images/EllipseYellow.jpg"> Собака
+                                                                            </div>
+                                                                            <div class="col-6">
+                                                                                <img src="images/EllipsePurple.jpg"> Хищник
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row" style="margin-top: 15px;">
+                                                                            <div class="col"><h4 style="color: green;"><b>5 900</b></p></div>
+                                                                            <div class="col-5">
+                                                                                <img src="images/imprint.jpg" alt="">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!--/.Third slide-->
+                                                                
                                                             </div>
-                                                            <!--/.First slide-->
-                                        
-                                                        <!--Second slide-->
-                                                            <div class="carousel-item">
+                                                        <!--/.Slides-->
+                                                    </div>
 
-                                                                <div class="row">
-                                                                <div class="col-md-4">
-                                                                    <div class="card mb-2">
-                                                                    <!--Header cards-->
-                                                                    <div class="mt-3">
-                                                                        <div class="row ml-1 align-items-center">
-                                                                            <div class="col-4 card-text-header">7 месяцев</div>
-                                                                            <div class="col-4 card-text-header">3 награды</div>
-                                                                            <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--Конец Header cards-->
-                                                                    <div class="w-75 ml-auto mr-auto">
-                                                                        <img class="card-img-top"  src="images/monkey.jpg" alt="Card image cap">
-                                                                    </div>
-                                                                <div class="card-body">
-                                                                    <h4 class="card-title" align="left"><b>Шимпанзе</b></h4>
-                                                                    <p class="card-text" align="left">Домашний питомец для тех, кому не хочется скучать</p>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipseYellow.jpg"> Обезьяна
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipsePurple.jpg"> Травояд.
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="margin-top: 15px;">
-                                                                        <div class="col"><h4 style="color: green;"><b>12 500</b></p></div>
-                                                                        <div class="col-5">
-                                                                            <img src="images/imprint.jpg" alt="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-4 clearfix d-none d-md-block">
-                                                                    <div class="card mb-2">
-                                                                    <!--Header cards-->
-                                                                    <div class="mt-3">
-                                                                        <div class="row ml-1 align-items-center">
-                                                                            <div class="col-4 card-text-header">4 месяца</div>
-                                                                            <div class="col-4 card-text-header">2 награды</div>
-                                                                            <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--Конец Header cards-->
-                                                                    <div class="w-75 ml-auto mr-auto">
-                                                                        <img class="card-img-top"  src="images/dob.jpg" alt="Card image cap">
-                                                                    </div>
-                                                                <div class="card-body">
-                                                                    <h4 class="card-title" align="left"><b>Доберман</b></h4>
-                                                                    <p class="card-text" align="left">Отличный новый друг для всей семьи, охраняет и обожает</p>
-                                                                    <div class="row">
-                                                                        <div class="col-6">
-                                                                            <img src="images/EllipseYellow.jpg"> Собака
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <img src="images/EllipsePurple.jpg"> Хищник
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="margin-top: 15px;">
-                                                                        <div class="col"><h4 style="color: green;"><b>5 900</b></p></div>
-                                                                        <div class="col-5">
-                                                                            <img src="images/imprint.jpg" alt="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-4 clearfix d-none d-md-block">
-                                                                    <div class="card mb-2">
-                                                                    <!--Header cards-->
-                                                                    <div class="mt-3">
-                                                                        <div class="row ml-1 align-items-center">
-                                                                            <div class="col-4 card-text-header">7 месяцев</div>
-                                                                            <div class="col-4 card-text-header">3 награды</div>
-                                                                            <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--Конец Header cards-->
-                                                                    <div class="w-75 ml-auto mr-auto">
-                                                                        <img class="card-img-top"  src="images/cat.jpg" alt="Card image cap">
-                                                                    </div>
-                                                                <div class="card-body">
-                                                                    <h4 class="card-title" align="left"><b>Вислоухая кошка</b></h4>
-                                                                    <p class="card-text" align="left">Прекрасная подруга на дождливые холодные времена</p>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipseYellow.jpg"> Кошка
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipsePurple.jpg"> Мышкоед.
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="margin-top: 15px;">
-                                                                        <div class="col"><h4 style="color: green;"><b>7 200</b></p></div>
-                                                                        <div class="col-5">
-                                                                            <img src="images/imprint.jpg" alt="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                    </div>
-                                                                </div>
-                                                                </div>
-
-                                                            </div>
-                                                            <!--/.Second slide-->
-
-                                                            <!--Third slide-->
-                                                            <div class="carousel-item">
-
-                                                                <div class="row">
-                                                                <div class="col-md-4">
-                                                                    <div class="card mb-2">
-                                                                    <!--Header cards-->
-                                                                    <div class="mt-3">
-                                                                        <div class="row ml-1 align-items-center">
-                                                                            <div class="col-4 card-text-header">7 месяцев</div>
-                                                                            <div class="col-4 card-text-header">3 награды</div>
-                                                                            <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--Конец Header cards-->
-                                                                    <div class="w-75 ml-auto mr-auto">
-                                                                        <img class="card-img-top"  src="images/cat.jpg" alt="Card image cap">
-                                                                    </div>
-                                                                <div class="card-body">
-                                                                    <h4 class="card-title" align="left"><b>Вислоухая кошка</b></h4>
-                                                                    <p class="card-text" align="left">Прекрасная подруга на дождливые холодные времена</p>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipseYellow.jpg"> Кошка
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipsePurple.jpg"> Мышкоед.
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="margin-top: 15px;">
-                                                                        <div class="col"><h4 style="color: green;"><b>7 200</b></p></div>
-                                                                        <div class="col-5">
-                                                                            <img src="images/imprint.jpg" alt="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-4 clearfix d-none d-md-block">
-                                                                    <div class="card mb-2">
-                                                                    <!--Header cards-->
-                                                                    <div class="mt-3">
-                                                                        <div class="row ml-1 align-items-center">
-                                                                            <div class="col-4 card-text-header">7 месяцев</div>
-                                                                            <div class="col-4 card-text-header">3 награды</div>
-                                                                            <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--Конец Header cards-->
-                                                                    <div class="w-75 ml-auto mr-auto">
-                                                                        <img class="card-img-top"  src="images/monkey.jpg" alt="Card image cap">
-                                                                    </div>
-                                                                <div class="card-body">
-                                                                    <h4 class="card-title" align="left"><b>Шимпанзе</b></h4>
-                                                                    <p class="card-text" align="left">Домашний питомец для тех, кому не хочется скучать</p>
-                                                                    <div class="row">
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipseYellow.jpg"> Обезьяна
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <img src="images/EllipsePurple.jpg"> Травояд.
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="margin-top: 15px;">
-                                                                        <div class="col"><h4 style="color: green;"><b>12 500</b></p></div>
-                                                                        <div class="col-5">
-                                                                            <img src="images/imprint.jpg" alt="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="col-md-4 clearfix d-none d-md-block">
-                                                                    <div class="card mb-2">
-                                                                    <!--Header cards-->
-                                                                    <div class="mt-3">
-                                                                        <div class="row ml-1 align-items-center">
-                                                                            <div class="col-4 card-text-header">4 месяца</div>
-                                                                            <div class="col-4 card-text-header">2 награды</div>
-                                                                            <div class="col"><img class="w-50" src="images/WC.jpg" alt=""></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--Конец Header cards-->
-                                                                    <div class="w-75 ml-auto mr-auto">
-                                                                        <img class="card-img-top"  src="images/dob.jpg" alt="Card image cap">
-                                                                    </div>
-                                                                <div class="card-body">
-                                                                    <h4 class="card-title" align="left"><b>Доберман</b></h4>
-                                                                    <p class="card-text" align="left">Отличный новый друг для всей семьи, охраняет и обожает</p>
-                                                                    <div class="row">
-                                                                        <div class="col-6">
-                                                                            <img src="images/EllipseYellow.jpg"> Собака
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <img src="images/EllipsePurple.jpg"> Хищник
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row" style="margin-top: 15px;">
-                                                                        <div class="col"><h4 style="color: green;"><b>5 900</b></p></div>
-                                                                        <div class="col-5">
-                                                                            <img src="images/imprint.jpg" alt="">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                    </div>
-                                                                </div>
-                                                                </div>
-
-                                                            </div>
-                                                            <!--/.Third slide-->
-                                                            
-                                                        </div>
-                                                    <!--/.Slides-->
+                                                    <a class="col-1 btn" href="#multi-item-example" data-slide="next">
+                                                        <img style="transform: rotate(180deg); width: 50%;" src="images/left.svg">
+                                                    </a>
                                                 </div>
-
-                                                <a class="col-1 btn" href="#multi-item-example" data-slide="next">
-                                                    <img style="transform: rotate(180deg); width: 50%;" src="images/left.svg">
-                                                </a>
                                             </div>
                                         </div>
+                                        <!--/.Controls-->
                                     </div>
-                                    <!--/.Controls-->
+                                <!--/.Carousel Wrapper-->
                                 </div>
-                            <!--/.Carousel Wrapper-->
-                            </div>
-                            <!--Конец Slider-->
-                    </div>
+                                <!--Конец Slider-->
+                        </div>
+                        <!--Конец Контент "все"-->
                     <div class="tab-pane fade mt-5 mb-5" id="list-dog" role="tabpanel" aria-labelledby="list-profile-list" align="center">Только собаки</div>
                     <div class="tab-pane fade mt-5 mb-5" id="list-cat" role="tabpanel" aria-labelledby="list-messages-list" align="center">Только кошки</div>
                     <div class="tab-pane fade mt-5 mb-5" id="list-popug" role="tabpanel" aria-labelledby="list-settings-list" align="center">Только попугаи</div>
@@ -542,8 +533,6 @@
                 </div>
             </div>
             <!--Конец группы списков-->
-
-
         </div>
     </div>
     <!--Конец shop-->
