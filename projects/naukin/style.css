@@ -1,6 +1,36 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*блоки сайта*/
+.header{
+    background: url('images/background_header.jpg') no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+    padding-bottom: 84px;
+}
+.why{
+    background-color: #000000;
+    padding-bottom: 500px;
+}
+.services{
+    background: url('images/background_services.jpg') no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+    padding-bottom: 2000px;
+}
+.contacts{
+    background-color: #000000;
+    padding-bottom: 500px;
+}
+.question{
+    background-color: #F5F5F5;
+    padding-bottom: 500px;
+}
+.footer-panel{
+    background-color: #000000;
+    padding-bottom: 500px;
+}
+/*элементы сайта*/
 .nav-link{
     font-weight: 500;
     margin-left: 28px;
@@ -10,9 +40,6 @@ body{
     color: #000000;
     border-bottom: 2px solid #492FE6;
 }
-.header{
-    background-color: #F5F5F5;
-}
 .btn-purple{
     color: #ECE7E4;
     background-color: #443EDF;
@@ -20,4 +47,13 @@ body{
 .btn-purple:hover{
     color: #ECE7E4;
     background-color: #443EDF;
+}
+
+@media(max-width:992px){
+    .header{
+        background-size: cover;
+    }
+    .services{
+        background-size: cover;
+    }
 }
