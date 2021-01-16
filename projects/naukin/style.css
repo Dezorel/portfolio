@@ -28,11 +28,12 @@ body{
 .question{
     padding-top: 56px;
     background-color: #F5F5F5;
-    padding-bottom: 500px;
+    padding-bottom: 56px;
 }
 .footer-panel{
+    padding-top: 56px;
     background-color: #000000;
-    padding-bottom: 500px;
+    padding-bottom: 198px;
 }
 /*элементы сайта*/
 .nav-link{
