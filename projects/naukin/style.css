@@ -118,8 +118,18 @@ a:hover{
     border-radius: 8px;
 }
 .multi-question{
-    margin-top: 20px;
+    margin-top: 10px;
     border-bottom: 1px solid #000000;
+}
+.plus{
+    margin-left: 105px;
+}
+/*Для того что бы убрать выделение у кнопок*/
+.btn:focus, .btn:focus:active {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 @media(max-width:992px){
     .header{
@@ -131,6 +141,9 @@ a:hover{
     .nav-link:hover {
         border-bottom: 0px;
     }
+    .plus{
+        margin-left: 40px;
+    }
 }
 @media(max-width:500px){
     .card{
@@ -140,5 +153,8 @@ a:hover{
 @media(max-width:767px){
     .footer-panel{
         padding-bottom: 56px;
+    }
+    .plus{
+        margin-left: 0px;
     }
 }
