@@ -11,17 +11,19 @@ body{
 .why{
     padding-top: 56px;
     background-color: #000000;
-    padding-bottom: 500px;
+    padding-bottom: 264px;
 }
 .services{
+    padding-top: 56px;
     background: url('images/background_services.jpg') no-repeat;
     height: 100%;
     background-size: 100% 100%;
     padding-bottom: 2000px;
 }
 .contacts{
+    padding-top: 56px;
     background-color: #000000;
-    padding-bottom: 500px;
+    padding-bottom: 56px;
 }
 .question{
     background-color: #F5F5F5;
@@ -82,6 +84,11 @@ body{
     border: 1px solid #FF73F1;
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+}
+.form-contacts{
+    border: 1px solid #443EDF;
+    box-sizing: border-box;
     border-radius: 8px;
 }
 @media(max-width:992px){
