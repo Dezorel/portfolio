@@ -48,12 +48,22 @@ body{
     color: #ECE7E4;
     background-color: #443EDF;
 }
-
+/*Изменяю цвет */
+.navbar-light .navbar-toggler-icon {
+    background-image: url('images/toggler.svg');
+}
+/*Убираю рамку цвет */
+.navbar-light .navbar-toggler {
+     border-color: rgba(0,0,0,0); 
+}
 @media(max-width:992px){
     .header{
         background-size: cover;
     }
     .services{
         background-size: cover;
+    }
+    .nav-link:hover {
+        border-bottom: 0px;
     }
 }
