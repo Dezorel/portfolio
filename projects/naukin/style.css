@@ -1,6 +1,13 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    color: #443EDF;
+}
+a:hover{
+    text-decoration: none;
+    color: #443EDF;
+}
 /*блоки сайта*/
 .header{
     background: url('images/background_header.jpg') no-repeat;
@@ -18,7 +25,7 @@ body{
     background: url('images/background_services.jpg') no-repeat;
     height: 100%;
     background-size: 100% 100%;
-    padding-bottom: 2000px;
+    padding-bottom: 212px;
 }
 .contacts{
     padding-top: 56px;
@@ -87,6 +94,12 @@ body{
     border: 1px solid #FF73F1;
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+}
+.purple-card{
+    background-color: #F5F5F5;
+    border: 1px solid #443EDF;
+    box-sizing: border-box;
     border-radius: 8px;
 }
 .form-control,
