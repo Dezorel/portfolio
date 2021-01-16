@@ -57,6 +57,9 @@ body{
 .navbar-light .navbar-toggler {
      border-color: rgba(0,0,0,0); 
 }
+.card{
+    max-width: 18rem;
+}
 .border-red-naukin{
     border: 1px solid #F2440D;
     box-sizing: border-box;
@@ -90,5 +93,10 @@ body{
     }
     .nav-link:hover {
         border-bottom: 0px;
+    }
+}
+@media(max-width:500px){
+    .card{
+        max-width: none;
     }
 }
