@@ -121,3 +121,8 @@ body{
         max-width: none;
     }
 }
+@media(max-width:767px){
+    .footer-panel{
+        padding-bottom: 56px;
+    }
+}
