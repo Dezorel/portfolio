@@ -10,7 +10,8 @@ a:hover{
 }
 /*блоки сайта*/
 .header{
-    background: url('images/background_header.jpg') no-repeat;
+    background-color: #F5F5F5;
+    /*background: url('images/background_header.jpg') no-repeat;*/
     height: 100%;
     background-size: 100% 100%;
     padding-bottom: 84px;
@@ -22,7 +23,8 @@ a:hover{
 }
 .services{
     padding-top: 56px;
-    background: url('images/background_services.jpg') no-repeat;
+    background-color: #F5F5F5;
+    /*background: url('images/background_services.jpg') no-repeat;*/
     height: 100%;
     background-size: cover;
     padding-bottom: 212px;
