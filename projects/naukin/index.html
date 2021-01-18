@@ -46,6 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Услуги</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Блог</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -68,7 +71,7 @@
                             <a href="#" class="btn btn-block btn-purple mr-3">Открыть услуги</a>
                         </div>
                         <div class="col-lg mt-2" align="center" >
-                            <a href="#" class="btn btn-block" style="font-size: 12px;">Смотреть портфолио-></a>
+                            <a href="#" class="btn btn-block" style="font-size: 12px;">Смотреть портфолио</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +159,7 @@
                                                 <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
                                             </div>
                                             <div class="col">
-                                                <img class="ml-auto" src="images/smile.svg" alt="">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
                                             </div>
                                         </div>
                                         <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
@@ -196,7 +199,7 @@
                                                 <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
                                             </div>
                                             <div class="col">
-                                                <img class="ml-auto" src="images/smile.svg" alt="">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
                                             </div>
                                         </div>
                                         <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
@@ -236,7 +239,7 @@
                                                 <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
                                             </div>
                                             <div class="col">
-                                                <img class="ml-auto" src="images/smile.svg" alt="">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
                                             </div>
                                         </div>
                                         <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
@@ -355,7 +358,8 @@
                 игрока на Молдавском рынке дизайна и веб разработки. Наши способности и опыт делают из нас одной из 
                 самых перспективных студий в Кишинёве. Мы избрали свой собственный путь развития и работы, благодаря 
                 которому мы станем лидерами в сфере графического и web дизайна.</p>
-
+            
+                <!--Остались вопросы?-->
             <div class="question">
                 <p style="margin-top: 24px; font-weight: 500;">Остались ещё вопросы? 
                     <a data-toggle="collapse" href="#questions" role="button" aria-expanded="false" 
