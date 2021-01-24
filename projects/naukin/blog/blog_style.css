@@ -8,6 +8,7 @@ body{
 
 
 a{
+    font-weight: 600;
     color: #443EDF;
 }
 a:hover{
@@ -24,8 +25,7 @@ a:hover{
     color: #000000;
     border-bottom: 2px solid #492FE6;
 }
-.top{
-
+.line{
     border-bottom: 1px solid #000000;
 }
 .more{
