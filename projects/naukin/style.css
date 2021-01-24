@@ -161,6 +161,13 @@ a:hover{
         margin-left: 0px;
     }
 }
+@media(max-width: 991px){
+    .active,
+    .nav-link:hover {
+        color: #000000;
+        border-bottom: none;
+    }
+}
 
 
 
