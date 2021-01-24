@@ -1,6 +1,12 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+.header{
+    background: #F5F5F5;
+    padding-top: 56px;
+}
+
+
 a{
     color: #443EDF;
 }
@@ -18,7 +24,13 @@ a:hover{
     color: #000000;
     border-bottom: 2px solid #492FE6;
 }
-
+.top{
+    margin-top: 200px;
+    border-bottom: 1px solid #000000;
+}
+.more{
+    padding-top: 24px;
+}
 @media(max-width: 991px){
     .active,
     .nav-link:hover {
