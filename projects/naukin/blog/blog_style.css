@@ -4,8 +4,12 @@ body{
 .header{
     background: #F5F5F5;
     padding-top: 56px;
+    padding-bottom: 56px;
 }
-
+.contacts{
+    background-color: #000000;
+    padding-top: 48px;
+}
 
 a{
     font-weight: 600;
