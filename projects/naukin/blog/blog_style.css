@@ -9,6 +9,7 @@ body{
 .contacts{
     background-color: #000000;
     padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 a{
@@ -38,6 +39,15 @@ a:hover{
 .card{
     background-color: #F5F5F5;
     border: none;
+}
+.btn-purple{
+    font-size: 12px;
+    color: #ECE7E4;
+    background-color: #443EDF;
+}
+.btn-purple:hover{
+    color: #ECE7E4;
+    background-color: #443EDF;
 }
 @media(max-width: 991px){
     .active,
