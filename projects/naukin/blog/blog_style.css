@@ -11,6 +11,11 @@ body{
     padding-top: 48px;
     padding-bottom: 48px;
 }
+.footer-panel{
+    padding-top: 56px;
+    background-color: #000000;
+    padding-bottom: 198px;
+}
 
 a{
     font-weight: 600;
