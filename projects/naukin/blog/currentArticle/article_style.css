@@ -15,7 +15,18 @@ body{
     background-color: #000000;
     padding-bottom: 198px;
 }
-
+/*Изменяю цвет togler*/
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../../images/toggler.svg');
+}
+/*Убираю рамку togler */
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+/*Обводка тоглера*/
+button:focus {
+    outline: none !important;
+}
 a{
     font-weight: 600;
     color: #443EDF;

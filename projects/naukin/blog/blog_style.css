@@ -54,6 +54,18 @@ a:hover{
     color: #ECE7E4;
     background-color: #443EDF;
 }
+/*Изменяю цвет togler*/
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../images/toggler.svg');
+}
+/*Убираю рамку togler */
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+/*Обводка тоглера*/
+button:focus {
+    outline: none !important;
+}
 @media(max-width: 991px){
     .active,
     .nav-link:hover {

@@ -72,6 +72,10 @@ a:hover{
 .navbar-light .navbar-toggler {
      border-color: rgba(0,0,0,0); 
 }
+/*Обводка тоглера*/
+button:focus {
+    outline: none !important;
+}
 .card{
     max-width: 18rem;
 }
@@ -133,10 +137,6 @@ a:hover{
     border: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-}
-/*Обводка тоглера*/
-button:focus {
-    outline: none !important;
 }
 @media(max-width:992px){
     .header{
