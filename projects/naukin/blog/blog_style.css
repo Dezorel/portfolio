@@ -73,3 +73,6 @@ button:focus {
         border-bottom: none;
     }
 }
+@media(max-width: 576px) {
+
+}
