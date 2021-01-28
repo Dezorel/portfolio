@@ -222,25 +222,24 @@
                     <div class="col-lg-6 mb-3">
                         <label for="validationText">Ваше имя</label>
                         <input type="text" id="validationText" class="form-control"
-                               v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
+                               v-model="name" placeholder="Имя" name="name" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-lg-6 mb-3">
                         <label for="validationText">Как с вами связаться?</label>
-                        <input type="text" class="form-control" v-model="address"
-                               @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
+                        <input type="text" class="form-control" v-model="address" placeholder="Как с вами связаться?" name="address" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-lg-6 mb-3">
                         <label for="validationText">Ваше сообщение</label>
-                        <textarea class="form-control" id="validationTextarea" @mousemove="checkForm" placeholder="Ваше сообщение"
-                                  name="message">{{message}}</textarea>
+                        <textarea class="form-control" id="validationTextarea" placeholder="Ваше сообщение"
+                                  name="message" required>{{message}}</textarea>
                     </div>
                 </div>
 
-                <button class="btn btn-warning" v-show="isSubmit"  type="submit">Отправить</button>
+                <button class="btn btn-warning" type="submit">Отправить</button>
 
             </form>
         </div>

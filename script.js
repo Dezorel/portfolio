@@ -34,7 +34,6 @@ let app = new Vue({
         message: '',
         name: '',
         address: '',
-        isSubmit: false,
         isUp: false,
         todoButtonList:[
             new ButtonCheckBox(
@@ -142,14 +141,6 @@ let app = new Vue({
         ],
     },
     methods:{
-        checkForm(){
-            if(this.name.length > 0 && this.address.length >0 && this.message.length > 0){
-                this.isSubmit = true
-            }
-            else{
-                this.isSubmit = false
-            }
-        },
         checkUp(){
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
