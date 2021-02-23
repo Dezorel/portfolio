@@ -14,12 +14,12 @@ a:hover{
     /*background: url('images/background_header.jpg') no-repeat;*/
     height: 100%;
     background-size: 100% 100%;
-    padding-bottom: 84px;
+    padding-bottom: 56px;
 }
 .why{
     padding-top: 56px;
     background-color: #000000;
-    padding-bottom: 264px;
+    padding-bottom: 64px;
 }
 .services{
     padding-top: 56px;
@@ -43,6 +43,17 @@ a:hover{
     padding-top: 56px;
     background-color: #000000;
     padding-bottom: 198px;
+}
+.portfolio{
+    color: white;
+    padding-top: 64px;
+    background-color: #000000;
+    padding-bottom: 64px;
+}
+.more{
+    padding-top: 64px;
+    background-color: #F5F5F5;
+    padding-bottom: 64px;
 }
 /*элементы сайта*/
 .nav-link{
