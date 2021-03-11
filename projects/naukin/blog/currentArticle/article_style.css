@@ -15,6 +15,10 @@ body{
     background-color: #000000;
     padding-bottom: 86px;
 }
+.footer-panel a{
+    font-size: 12px;
+    font-weight: 500;
+}
 /*Изменяю цвет togler*/
 .navbar-light .navbar-toggler-icon {
     background-image: url('../../images/toggler.svg');
@@ -28,8 +32,6 @@ button:focus {
     outline: none !important;
 }
 a{
-    font-size: 12px;
-    font-weight: 500;
     color: #443EDF;
 }
 a:hover{
