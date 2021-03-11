@@ -44,6 +44,10 @@ a:hover{
     background-color: #000000;
     padding-bottom: 86px;
 }
+.footer-panel a{
+    font-size: 12px;
+    font-weight: 500;
+}
 .portfolio{
     color: white;
     padding-top: 64px;
