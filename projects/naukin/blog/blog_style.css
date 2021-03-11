@@ -20,6 +20,7 @@ body{
     font-size: 12px;
     font-weight: 500;
 }
+
 .main-post-title{
     margin-top: 24px;
     font-weight: bold;
@@ -32,6 +33,10 @@ body{
     font-weight: 500;
     color: black;
 }
+.main-post-link{
+    font-weight: 600;
+    margin-top: 16px;
+}
 .second-post-title{
     margin-top: 16px;
     font-weight: bold;
@@ -43,6 +48,11 @@ body{
     font-size: 12px;
     font-weight: 500;
     color: black;
+}
+.second-post-link{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px
 }
 a{
     color: #443EDF;
@@ -102,15 +112,31 @@ button:focus {
         border-bottom: none;
     }
 }
-@media(max-width: 576px) {
-
-
-}
 @media (max-width: 768px) {
     .sec{
         margin-top: 25px;
     }
     .line{
         border-bottom: none;
+    }
+
+    .main-post-title{
+        font-size: 18px;
+    }
+    .main-post-text{
+        font-size: 18px;
+    }
+    .main-post-link{
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+    .second-post-title{
+        font-size: 18px;
+    }
+    .second-post-text{
+        font-size: 18px;
+    }
+    .second-post-link{
+        font-size: 16px;
     }
 }
