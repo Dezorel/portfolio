@@ -62,7 +62,8 @@ a:hover{
     color: #443EDF;
 }
 .nav-link{
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     margin-left: 28px;
     color: #858585;
 }
