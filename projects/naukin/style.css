@@ -71,12 +71,15 @@ a:hover{
     color: #000000;
     border-bottom: 2px solid #492FE6;
 }
-.btn-purple{
+.btn-purple-white{
     font-size: 12px;
-    color: #ECE7E4;
-    background-color: #443EDF;
+    font-weight: 600;
+    color: #000000;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
 }
-.btn-purple:hover{
+.btn-purple-white:hover{
     color: #ECE7E4;
     background-color: #443EDF;
 }
