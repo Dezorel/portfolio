@@ -13,7 +13,7 @@ body{
 .footer-panel{
     padding-top: 56px;
     background-color: #000000;
-    padding-bottom: 198px;
+    padding-bottom: 86px;
 }
 /*Изменяю цвет togler*/
 .navbar-light .navbar-toggler-icon {
@@ -28,7 +28,8 @@ button:focus {
     outline: none !important;
 }
 a{
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
     color: #443EDF;
 }
 a:hover{
