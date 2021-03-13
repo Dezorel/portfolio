@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,31 +9,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <!--CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolioStyle.css">
 
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!--VUE-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="main.js" defer></script>
-    
+    <title>Portfolio</title>
 
-    <title>Redesign Naukin.com</title>
-
-    <style>     /* v-cloak - делает так, что бы при обновлении страницы vue не показывал не подгруженные модули */
-        [v-cloak]{
-            display: none;
-        }
-    </style>
-
-  </head>
-  <body>
-  <div id="app" v-cloak>
+</head>
+<body>
+<div>
 
     <!--Навигационная панель-->
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#F5F5F5; position: sticky; top:0px; z-index: 10">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#F5F5F5; position: sticky; top:0px; z-index: 10">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/gifs/logo.gif" style="max-height: 38px; max-width: 80px">
@@ -47,13 +36,13 @@
                         <a class="nav-link active" href="#">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://7brothers.ml/projects/naukin/portfolio/">Портфолио</a>
+                        <a class="nav-link" href="#">Портфолио</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Услуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://7brothers.ml/projects/naukin/blog/">Блог</a>
+                        <a class="nav-link" href="https://7brothers.ml/projects/naukin/blog/index.html">Блог</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Калькуляторы</a>
@@ -90,180 +79,124 @@
     </div>
     <!--Конец HEADER-->
 
-      <!--Как мы работем-->
-      <div class="why text-white">
-          <div class="container">
-              <h2 style="font-weight: 700;">Как мы работаем</h2>
-              <!--Карточки-->
-              <div class="row" style="margin-top: 64px;">
-                  <div class="col-lg-3" align="center">
-                      <div class="card bg-grey mb-3 h-100" style="background-color: #000000;">
-                          <div class="card-body text-white" align="center">
-                              <img src="images/card-icon/red.svg" alt="">
-                              <h5 class="card-title">1. Брифинг</h5>
-                              <p class="card-text" style="font-size: 10px;">
-                                  Подробно обсуждаем вашу задачу и обговариваем детали заказа.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3" align="center">
-                      <div class="card bg-grey mb-3 h-100" style="background-color: #000000;">
-                          <div class="card-body text-white" align="center">
-                              <img src="images/card-icon/green.svg" alt="">
-                              <h5 class="card-title">2. Тех. Задание</h5>
-                              <p class="card-text" style="font-size: 10px;">
-                                  Составляем техническое задание на основе ваших требований и пожеланий.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3" align="center">
-                      <div class="card bg-grey mb-3 h-100" style="background-color: #000000;">
-                          <div class="card-body text-white" align="center">
-                              <img src="images/card-icon/purple.svg" alt="">
-                              <h5 class="card-title">3. Реализация</h5>
-                              <p class="card-text" style="font-size: 10px;">
-                                  В течение установленных сроков, выполняется заказ в согласии с техническим заданием.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-3" align="center">
-                      <div class="card bg-grey mb-3 h-100" style="background-color: #000000;">
-                          <div class="card-body text-white" align="center">
-                              <img src="images/card-icon/pink.svg" alt="">
-                              <h5 class="card-title">4. Результат</h5>
-                              <p class="card-text" style="font-size: 10px;">
-                                  Все материалы передаются заказчику после оплаты заказа.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <!--Как мы работем?-->
-      <!--
-         TODO: поменять текст, посмотреть шрифты
-      -->
 
-      <!--Услуги-->
-      <div class="services">
-          <div class="container">
 
-              <h2 style="font-weight: 700;">Услуги</h2>
+    <!--Услуги-->
+    <div class="services">
+        <div class="container">
 
-              <div class="multi-card">
-                  <div class="card mw-100 " style="margin-top: 64px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="font-weight:600;">Веб-дизайн</h5>
+            <h2 style="font-weight: 700;">Услуги</h2>
 
-                          <div class="row" align="center" style="margin-top: 25px;">
-                              <!--Размножающиеся карточка-->
-                              <div class="col-lg-4 mt-3" v-for="item in listWebDesign">
-                                  <div class="card purple-card h-100" style="max-width: 350px;">
-                                      <div class="card-body">
-                                          <div class="card-title row">
-                                              <div class="col-9">
-                                                  <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
-                                              </div>
-                                              <div class="col">
-                                                  <img class="ml-auto" :src="item.urlPicture" alt="">
-                                              </div>
-                                          </div>
-                                          <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
-                                          <div class="row" style="font-weight: 600; font-size: 12px;">
-                                              <div class="col" align="left">
-                                                  <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
-                                              </div>
-                                              <div class="col">
-                                                  <a href="#" @click="clicked(item.id)">Подробнее</a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            <div class="multi-card">
+                <div class="card mw-100 " style="margin-top: 64px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:600;">Веб-дизайн</h5>
 
-              <div class="multi-card">
-                  <div class="card mw-100 " style="margin-top: 16px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="font-weight:600;">Графический дизайн</h5>
+                        <div class="row" align="center" style="margin-top: 25px;">
+                            <!--Размножающиеся карточка-->
+                            <div class="col-lg-4 mt-3" v-for="item in listWebDesign">
+                                <div class="card purple-card h-100" style="max-width: 350px;">
+                                    <div class="card-body">
+                                        <div class="card-title row">
+                                            <div class="col-9">
+                                                <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
+                                        <div class="row" style="font-weight: 600; font-size: 12px;">
+                                            <div class="col" align="left">
+                                                <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" @click="clicked(item.id)">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                          <div class="row" align="center" style="margin-top: 25px;">
+            <div class="multi-card">
+                <div class="card mw-100 " style="margin-top: 16px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:600;">Графический дизайн</h5>
 
-                              <!--Размножающиеся карточка-->
-                              <div class="col-lg-4 mt-3" v-for="item in listDesign">
-                                  <div class="card purple-card h-100" style="max-width: 350px;">
-                                      <div class="card-body">
-                                          <div class="card-title row">
-                                              <div class="col-9">
-                                                  <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
-                                              </div>
-                                              <div class="col">
-                                                  <img class="ml-auto" :src="item.urlPicture" alt="">
-                                              </div>
-                                          </div>
-                                          <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
-                                          <div class="row" style="font-weight: 600; font-size: 12px;">
-                                              <div class="col" align="left">
-                                                  <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
-                                              </div>
-                                              <div class="col">
-                                                  <a href="#" @click="clicked(item.id)">Подробнее</a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                        <div class="row" align="center" style="margin-top: 25px;">
 
-              <div class="multi-card">
-                  <div class="card mw-100 " style="margin-top: 16px;">
-                      <div class="card-body">
-                          <h5 class="card-title" style="font-weight:600;">Маркетинг</h5>
+                            <!--Размножающиеся карточка-->
+                            <div class="col-lg-4 mt-3" v-for="item in listDesign">
+                                <div class="card purple-card h-100" style="max-width: 350px;">
+                                    <div class="card-body">
+                                        <div class="card-title row">
+                                            <div class="col-9">
+                                                <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
+                                        <div class="row" style="font-weight: 600; font-size: 12px;">
+                                            <div class="col" align="left">
+                                                <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" @click="clicked(item.id)">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                          <div class="row" align="center" style="margin-top: 25px;">
+            <div class="multi-card">
+                <div class="card mw-100 " style="margin-top: 16px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:600;">Маркетинг</h5>
 
-                              <!--Размножающиеся карточка-->
-                              <div class="col-lg-4 mt-3" v-for="item in listMarketing">
-                                  <div class="card purple-card h-100" style="max-width: 350px;">
-                                      <div class="card-body">
-                                          <div class="card-title row">
-                                              <div class="col-9">
-                                                  <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
-                                              </div>
-                                              <div class="col">
-                                                  <img class="ml-auto" :src="item.urlPicture" alt="">
-                                              </div>
-                                          </div>
-                                          <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
-                                          <div class="row" style="font-weight: 600; font-size: 12px;">
-                                              <div class="col" align="left">
-                                                  <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
-                                              </div>
-                                              <div class="col">
-                                                  <a href="#" @click="clicked(item.id)">Подробнее</a>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                        <div class="row" align="center" style="margin-top: 25px;">
 
-          </div>
-      </div>
-      <!--Конец Услуги-->
+                            <!--Размножающиеся карточка-->
+                            <div class="col-lg-4 mt-3" v-for="item in listMarketing">
+                                <div class="card purple-card h-100" style="max-width: 350px;">
+                                    <div class="card-body">
+                                        <div class="card-title row">
+                                            <div class="col-9">
+                                                <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
+                                        <div class="row" style="font-weight: 600; font-size: 12px;">
+                                            <div class="col" align="left">
+                                                <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" @click="clicked(item.id)">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Конец Услуги-->
 
     <!--Portfolio-->
     <div class="portfolio">
@@ -326,14 +259,14 @@
                     <img src="images/portfolio-img/gaomon_portfolio.svg" class="w-100 mb-3">
                 </div>
                 <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
-                   <div>
-                       <h3 style="margin-bottom: 16px; font-size: 24px;">Gaomon</h3>
-                       <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
-                           возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
-                           разные виды проектов и способов их продвижения, однако главной целью остаётся увеличение
-                           популярности бренда, а также продажа товаров.
-                           <br><br> Брендинг + Сайт-каталог <br> Косметологический кабинет.</p>
-                   </div>
+                    <div>
+                        <h3 style="margin-bottom: 16px; font-size: 24px;">Gaomon</h3>
+                        <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                            возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
+                            разные виды проектов и способов их продвижения, однако главной целью остаётся увеличение
+                            популярности бренда, а также продажа товаров.
+                            <br><br> Брендинг + Сайт-каталог <br> Косметологический кабинет.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -373,7 +306,7 @@
                                 <span style="color: #C1C1C1;">+373 069 65 89 75 </span>
                             </p>
                             <p>Социальные сети:<br>
-                             <a href="#">Instagram</a><br>
+                                <a href="#">Instagram</a><br>
                                 <a href="#">VKontakte</a><br>
                                 <a href="#">Behance</a><br> </p>
 
@@ -444,29 +377,29 @@
                     </div>
                 </div>
             </div>
-             <!--Конец Вопрос - ответ-->
+            <!--Конец Вопрос - ответ-->
 
-           <div class="row">
-               <div class="col-md-4 d-flex align-items-center">
-                   <img src="images/logo-questons.svg" class="w-100">
-               </div>
-               <div class="col-md-7 offset-md-1">
-                   <p style="margin-top: 74px; font-weight: 500;">Web-студия Naukin Design: качественный и уникальный дизайн и профессиональное создание сайтов в Молдове.
-                       Команда талантливых, молодых и ответственных специалистов в своих сферах, находящих индивидуальный
-                       подход к каждому клиенту — именно так можно описать студию дизайна Naukin Design - несомненно сильного
-                       игрока на Молдавском рынке дизайна и веб разработки. Наши способности и опыт делают из нас одной из
-                       самых перспективных студий в Кишинёве. Мы избрали свой собственный путь развития и работы, благодаря
-                       которому мы станем лидерами в сфере графического и web дизайна.</p>
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="images/logo-questons.svg" class="w-100">
+                </div>
+                <div class="col-md-7 offset-md-1">
+                    <p style="margin-top: 74px; font-weight: 500;">Web-студия Naukin Design: качественный и уникальный дизайн и профессиональное создание сайтов в Молдове.
+                        Команда талантливых, молодых и ответственных специалистов в своих сферах, находящих индивидуальный
+                        подход к каждому клиенту — именно так можно описать студию дизайна Naukin Design - несомненно сильного
+                        игрока на Молдавском рынке дизайна и веб разработки. Наши способности и опыт делают из нас одной из
+                        самых перспективных студий в Кишинёве. Мы избрали свой собственный путь развития и работы, благодаря
+                        которому мы станем лидерами в сфере графического и web дизайна.</p>
 
-                         <!--Остались вопросы?-->
-                       <p style="font-weight: 500;">Остались ещё вопросы?
-                           <a data-toggle="collapse" href="#questions" role="button" aria-expanded="false"
-                              aria-controls="multiCollapseExample1">
-                               Продолжить чтение
-                           </a>
-                       </p>
-               </div>
-           </div>
+                    <!--Остались вопросы?-->
+                    <p style="font-weight: 500;">Остались ещё вопросы?
+                        <a data-toggle="collapse" href="#questions" role="button" aria-expanded="false"
+                           aria-controls="multiCollapseExample1">
+                            Продолжить чтение
+                        </a>
+                    </p>
+                </div>
+            </div>
 
             <!--Остались вопросы? (ответы)-->
             <div class="have-question" style="margin-top: 24px;">
@@ -580,79 +513,79 @@
 
     <!--Footer-->
     <div class="footer-panel text-white">
-          <div class="container">
+        <div class="container">
 
-              <div class="row">
-                  <div class="col-md-2">
-                      <div class="row ">
-                          <div class="col-12">
-                              <img src="images/logo_footer.svg" style="color: white; margin-bottom: 32px">
-                          </div>
-                          <div class="col-12">
-                              <p style="font-weight: 500;font-size: 12px;">Номер телефона:    <br>
-                                  <span style="color: #C1C1C1;">+373 069 65 89 75</span>
-                              </p>
-                          </div>
-                          <div class="col-12">
-                              <p style="font-weight: 500;font-size: 12px;">Связь по почте:    <br>
-                                  <span style="color: #C1C1C1">eugeniu@naukin.com</span>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-2 mb-4">
-                      <p>Веб-дизайн:</p>
-                      <a href="#">Лэндинг</a><br>
-                      <a href="#">Сайт визитка</a><br>
-                      <a href="#">Сайт Tilda</a><br>
-                      <a href="#">Сайт-каталог</a><br>
-                      <a href="#">Интернет-магазин</a><br>
-                      <a href="#">Мобильное приложение</a><br>
-                      <a href="#">Промо-сайт</a><br>
-                  </div>
-                  <div class="col-md-2 mb-4">
-                      <p>Граф. дизайн:</p>
-                      <a href="#">Разработка логотипа</a><br>
-                      <a href="#">Брэндбук</a><br>
-                      <a href="#">Разработка фир.стиля</a><br>
-                      <a href="#">Печатная продукция</a><br>
-                      <a href="#">Разработка этикетки</a><br>
-                      <a href="#">Разработка этикетки</a><br>
-                  </div>
-                  <div class="col-md-2 mb-4">
-                      <p>Маркетинг:</p>
-                      <a href="#">Семантическое ядро</a><br>
-                      <a href="#">SMM продвижение сайта</a><br>
-                      <a href="#">Анализ и доработка сайта</a><br>
-                      <a href="#">SEO продвижение сайта</a><br>
-                      <a href="#">Контекстная реклама</a><br>
-                  </div>
-                  <div class="col-md-2">
-                      <p>Калькуляторы:</p>
-                      <a href="#">Веб-дизайн калькулятор</a><br>
-                      <a href="#">Граф.дизайн калькулятор</a><br>
-                      <a href="#">Маркетинг калькулятор</a><br>
-                  </div>
-                  <div class="col-md-2">
-                      <p>Социальные сети: <br>
-                          <a href="#">Instagram</a><br>
-                          <a href="#">VKontakte</a><br>
-                          <a href="#">Behance</a><br>
-                          <a href="#">Facebook</a>
-                      </p>
-                  </div>
-              </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="row ">
+                        <div class="col-12">
+                            <img src="images/logo_footer.svg" style="color: white; margin-bottom: 32px">
+                        </div>
+                        <div class="col-12">
+                            <p style="font-weight: 500;font-size: 12px;">Номер телефона:    <br>
+                                <span style="color: #C1C1C1;">+373 069 65 89 75</span>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <p style="font-weight: 500;font-size: 12px;">Связь по почте:    <br>
+                                <span style="color: #C1C1C1">eugeniu@naukin.com</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <p>Веб-дизайн:</p>
+                    <a href="#">Лэндинг</a><br>
+                    <a href="#">Сайт визитка</a><br>
+                    <a href="#">Сайт Tilda</a><br>
+                    <a href="#">Сайт-каталог</a><br>
+                    <a href="#">Интернет-магазин</a><br>
+                    <a href="#">Мобильное приложение</a><br>
+                    <a href="#">Промо-сайт</a><br>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <p>Граф. дизайн:</p>
+                    <a href="#">Разработка логотипа</a><br>
+                    <a href="#">Брэндбук</a><br>
+                    <a href="#">Разработка фир.стиля</a><br>
+                    <a href="#">Печатная продукция</a><br>
+                    <a href="#">Разработка этикетки</a><br>
+                    <a href="#">Разработка этикетки</a><br>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <p>Маркетинг:</p>
+                    <a href="#">Семантическое ядро</a><br>
+                    <a href="#">SMM продвижение сайта</a><br>
+                    <a href="#">Анализ и доработка сайта</a><br>
+                    <a href="#">SEO продвижение сайта</a><br>
+                    <a href="#">Контекстная реклама</a><br>
+                </div>
+                <div class="col-md-2">
+                    <p>Калькуляторы:</p>
+                    <a href="#">Веб-дизайн калькулятор</a><br>
+                    <a href="#">Граф.дизайн калькулятор</a><br>
+                    <a href="#">Маркетинг калькулятор</a><br>
+                </div>
+                <div class="col-md-2">
+                    <p>Социальные сети: <br>
+                        <a href="#">Instagram</a><br>
+                        <a href="#">VKontakte</a><br>
+                        <a href="#">Behance</a><br>
+                        <a href="#">Facebook</a>
+                    </p>
+                </div>
+            </div>
 
 
-          </div>
-      </div>
+        </div>
+    </div>
     <!--Конец Footer-->
 
 
 
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-  </body>
+</body>
 </html>
