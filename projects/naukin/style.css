@@ -83,6 +83,17 @@ a:hover{
     color: #ECE7E4;
     background-color: #443EDF;
 }
+.btn-purple{
+    background: #443EDF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #F5F5F5;
+}
+.btn-purple:hover{
+    color: #F5F5F5;
+}
 /*Изменяю цвет */
 .navbar-light .navbar-toggler-icon {
     background-image: url('images/toggler.svg');
