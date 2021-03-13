@@ -60,6 +60,10 @@ a:hover{
     padding-bottom: 164px;
 }
 /*элементы сайта*/
+.contacts-links{
+    font-size: 12px;
+    font-weight: 500;
+}
 .nav-link{
     font-size: 14px;
     font-weight: 600;
