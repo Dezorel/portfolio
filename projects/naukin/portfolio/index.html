@@ -46,7 +46,7 @@
                         <a class="nav-link" href="https://7brothers.ml/projects/naukin/">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Портфолио</a>
+                        <a class="nav-link activated" href="#">Портфолио</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#">Услуги</a>
@@ -71,15 +71,22 @@
                     <h2 style="margin-bottom: 32px; font-weight: bold; font-size: 40px; color: black">Портфолио студии Naukin Design</h2>
                     <p style="font-weight: 500;">Здесь представлены одни из наших недавних работ в сфере веб-дизайна
                         и графического дизайна.</p>
-                    <div class="row" style="margin-top: 50px;">
-                        <div class="col-lg-2">
-                            Портфолио:
-                        </div>
-                        <div class="col-lg mt-2" align="center">
-                            <a href="#" class="btn btn-block btn-purple-white mr-3">Веб-дизайн</a>
-                        </div>
-                        <div class="col-lg mt-2" align="center" >
-                            <a href="#" class="btn btn-block btn-purple-white" style="font-size: 12px;">Графический дизайн</a>
+                    <div class="row">
+                        <div class="col-md" style="margin-bottom: 64px">
+                            <div class="list-group " id="list-tab" role="tablist" style="margin-top: 50px;">
+                                <ul class="nav nav-tabs">
+                                    <p class="d-flex align-items-center" style="margin-right: 16px; margin-top: 5px; font-weight: 600;
+                                        font-size: 14px; color: #000000;">Портфолио:</p>
+                                    <!-- Первая вкладка (активная) -->
+                                    <li class="nav-item nav-item-list-group mr-3">
+                                        <a class="btn btn-block btn-purple-white btn-list mr-3 active" id="list-web-list" data-toggle="list" href="#list-web" role="tab" aria-controls="web">ВЕБ</a>
+                                    </li>
+                                    <!-- Вторая вкладка -->
+                                    <li class="nav-item nav-item-list-group">
+                                        <a class="btn btn-block btn-purple-white btn-list mr-3" data-toggle="list" href="#list-graf" role="tab" aria-controls="graf">ГРАФ</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,78 +96,156 @@
     <!--Конец HEADER-->
 
     <!--Portfolio-->
-    <div class="portfolio">
-        <div class="container">
-            <!--Ecaterina-->
-            <div class="row" style="margin-bottom: 64px">
-                <div class="col-lg-4 d-flex align-items-center">
-                    <div>
-                        <h3 style="margin-bottom: 16px; font-size: 24px;">Ecaterina Matei</h3>
-                        <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
-                            возможностей продвижения и достижения целей в социальных сетях.
-                            В данной отрасли есть разные виды проектов и способов их продвижения,
-                            однако главной целью остаётся увеличение популярности бренда, а также продажа
-                            товаров.<br><br>Брендинг + Печатная продукция
-                            Косметологический кабинет</p>
+    <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-web" role="tabpanel" aria-labelledby="list-web-list">
+                <div class="portfolio">
+                    <div class="container">
+                        <!--Ecaterina-->
+                        <div class="row" style="margin-bottom: 64px">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">Ecaterina Matei</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях.
+                                        В данной отрасли есть разные виды проектов и способов их продвижения,
+                                        однако главной целью остаётся увеличение популярности бренда, а также продажа
+                                        товаров.<br><br>Брендинг + Печатная продукция
+                                        Косметологический кабинет</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 offset-lg-1">
+                                <img src="../images/portfolio-img/ecaterina_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                        </div>
+
+                        <!--Alert-->
+                        <div class="row" style="margin-bottom: 64px">
+                            <div class="col-lg-7" >
+                                <img src="../images/portfolio-img/alert_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                            <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">AllERT</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть разные виды
+                                        проектов и способов их продвижения, однако главной целью остаётся увеличение популярности бренда,
+                                        а также продажа товаров.
+                                        <br><br> Брендинг + Мобильное приложение>Start Up компания.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Astralis Dent-->
+                        <div class="row" style="margin-bottom: 64px">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">Astralis Dent</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
+                                        разные виды проектов и способов их продвижения, однако главной целью остаётся
+                                        увеличение популярности бренда, а также продажа товаров.
+                                        <br><br> Брендинг + Печатная продукция <br> Частная стоматология.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 offset-lg-1">
+                                <img src="../images/portfolio-img/astralis_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                        </div>
+
+                        <!--Gaomon-->
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img src="../images/portfolio-img/gaomon_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                            <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">Gaomon</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
+                                        разные виды проектов и способов их продвижения, однако главной целью остаётся увеличение
+                                        популярности бренда, а также продажа товаров.
+                                        <br><br> Брендинг + Сайт-каталог <br> Косметологический кабинет.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-7 offset-lg-1">
-                    <img src="../images/portfolio-img/ecaterina_portfolio.svg" class="w-100 mb-3">
-                </div>
             </div>
+            <div class="tab-pane fade" id="list-graf" role="tabpanel" aria-labelledby="list-profile-list">
+                <div class="portfolio">
+                    <div class="container">
+                        <!--Ecaterina-->
+                        <div class="row" style="margin-bottom: 64px">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">АБСОЛЮТНОЕ ДРУГОЕ ПОРТФОЛИО! :)</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях.
+                                        В данной отрасли есть разные виды проектов и способов их продвижения,
+                                        однако главной целью остаётся увеличение популярности бренда, а также продажа
+                                        товаров.<br><br>Брендинг + Печатная продукция
+                                        Косметологический кабинет</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 offset-lg-1">
+                                <img src="../images/portfolio-img/ecaterina_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                        </div>
 
-            <!--Alert-->
-            <div class="row" style="margin-bottom: 64px">
-                <div class="col-lg-7" >
-                    <img src="../images/portfolio-img/alert_portfolio.svg" class="w-100 mb-3">
-                </div>
-                <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
-                    <div>
-                        <h3 style="margin-bottom: 16px; font-size: 24px;">AllERT</h3>
-                        <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
-                            возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть разные виды
-                            проектов и способов их продвижения, однако главной целью остаётся увеличение популярности бренда,
-                            а также продажа товаров.
-                            <br><br> Брендинг + Мобильное приложение>Start Up компания.</p>
-                    </div>
-                </div>
-            </div>
+                        <!--Alert-->
+                        <div class="row" style="margin-bottom: 64px">
+                            <div class="col-lg-7" >
+                                <img src="../images/portfolio-img/alert_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                            <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">AllERT</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть разные виды
+                                        проектов и способов их продвижения, однако главной целью остаётся увеличение популярности бренда,
+                                        а также продажа товаров.
+                                        <br><br> Брендинг + Мобильное приложение>Start Up компания.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <!--Astralis Dent-->
-            <div class="row" style="margin-bottom: 64px">
-                <div class="col-lg-4 d-flex align-items-center">
-                    <div>
-                        <h3 style="margin-bottom: 16px; font-size: 24px;">Astralis Dent</h3>
-                        <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
-                            возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
-                            разные виды проектов и способов их продвижения, однако главной целью остаётся
-                            увеличение популярности бренда, а также продажа товаров.
-                            <br><br> Брендинг + Печатная продукция <br> Частная стоматология.</p>
-                    </div>
-                </div>
-                <div class="col-lg-7 offset-lg-1">
-                    <img src="../images/portfolio-img/astralis_portfolio.svg" class="w-100 mb-3">
-                </div>
-            </div>
+                        <!--Astralis Dent-->
+                        <div class="row" style="margin-bottom: 64px">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">Astralis Dent</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
+                                        разные виды проектов и способов их продвижения, однако главной целью остаётся
+                                        увеличение популярности бренда, а также продажа товаров.
+                                        <br><br> Брендинг + Печатная продукция <br> Частная стоматология.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 offset-lg-1">
+                                <img src="../images/portfolio-img/astralis_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                        </div>
 
-            <!--Gaomon-->
-            <div class="row">
-                <div class="col-lg-7">
-                    <img src="../images/portfolio-img/gaomon_portfolio.svg" class="w-100 mb-3">
-                </div>
-                <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
-                    <div>
-                        <h3 style="margin-bottom: 16px; font-size: 24px;">Gaomon</h3>
-                        <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
-                            возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
-                            разные виды проектов и способов их продвижения, однако главной целью остаётся увеличение
-                            популярности бренда, а также продажа товаров.
-                            <br><br> Брендинг + Сайт-каталог <br> Косметологический кабинет.</p>
+                        <!--Gaomon-->
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img src="../images/portfolio-img/gaomon_portfolio.svg" class="w-100 mb-3">
+                            </div>
+                            <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
+                                <div>
+                                    <h3 style="margin-bottom: 16px; font-size: 24px;">Gaomon</h3>
+                                    <p>SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                                        возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть
+                                        разные виды проектов и способов их продвижения, однако главной целью остаётся увеличение
+                                        популярности бренда, а также продажа товаров.
+                                        <br><br> Брендинг + Сайт-каталог <br> Косметологический кабинет.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!--Конец Portfolio-->
 
     <!--Услуги-->

@@ -28,7 +28,7 @@ let app = new Vue({
                     ' страница может быть нужна для оформления онлайн заказа, онлайн оплаты ' +
                     'или нахождения аудитории заинтересованной в приобретении продукта.',
                     'От 350 €',
-                    'images/servicesIcon/landing.svg'
+                    '../images/servicesIcon/landing.svg'
                 ),
                 new Card(
                     2,
@@ -39,7 +39,7 @@ let app = new Vue({
                     'компании.  Такой сайт состоит из одной или нескольких страниц, что ' +
                     'позволяет ознакомиться с важной информацией.',
                     'От 500 €',
-                    'images/servicesIcon/business_site.svg'
+                    '../images/servicesIcon/business_site.svg'
                 ),
                 new Card(
                     3,
@@ -49,7 +49,7 @@ let app = new Vue({
                     'на услугах программиста. Tilda - отличный выход для тех, чьи финансы для создания ' +
                     'сайта сильно ограничены.',
                     'От 150 €',
-                    'images/servicesIcon/tilda.svg'
+                    '../images/servicesIcon/tilda.svg'
                 )
             ],
             listDesign:[
@@ -61,7 +61,7 @@ let app = new Vue({
                     'среди конкурентов. Товарный знак это обязательная составляющая уникального ' +
                     'стиля бренда. Он может присутствовать на различных видах одежды и рекламных материалах.',
                     'От 150 €',
-                    'images/servicesIcon/logo_dev.svg'
+                    '../images/servicesIcon/logo_dev.svg'
                 ),
                 new Card(
                     2,
@@ -71,7 +71,7 @@ let app = new Vue({
                     'интегрировать фирменный стиль в корпоративную среду. Данный документ позволит ' +
                     'упростить задачи связанные с продвижением и позиционированием компании на рынке.',
                     'От 250 €',
-                    'images/servicesIcon/brandbook.svg'
+                    '../images/servicesIcon/brandbook.svg'
                 ),
                 new Card(
                     3,
@@ -80,7 +80,7 @@ let app = new Vue({
                     'стилистика которых является единой. Визуальный стиль позволяет донести нужную визуальную ' +
                     'информацию до пользователей и сформировать связь с вашим брендом.',
                     'От 350 €',
-                    'images/servicesIcon/firm_style.svg'
+                    '../images/servicesIcon/firm_style.svg'
                 ),
             ],
             listMarketing:[
@@ -92,7 +92,7 @@ let app = new Vue({
                     'Количество запросов формируется на основе популярности отрасли и от определённого ' +
                     'вида товара. Ядро необходимо для оптимизации сайта под определённые поисковые запросы.',
                     'От 50 €',
-                    'images/servicesIcon/semantic_core.svg'
+                    '../images/servicesIcon/semantic_core.svg'
                 ),
                 new Card(
                     2,
@@ -103,7 +103,7 @@ let app = new Vue({
                     'однако главной целью остаётся увеличение популярности бренда, а так же ' +
                     'продажа товаров',
                     'От 100 €',
-                    'images/servicesIcon/smm.svg'
+                    '../images/servicesIcon/smm.svg'
                 ),
                 new Card(
                     3,
@@ -112,7 +112,7 @@ let app = new Vue({
                     'на поиск ошибок и слабых мест сайта с последующим их исправлением. По мимо этого в ' +
                     'услугу входит внутрянняя и внешняя SEO-оптимизация сайта',
                     'От 100 €',
-                    'images/servicesIcon/analiz_site.svg'
+                    '../images/servicesIcon/analiz_site.svg'
                 ),
             ],
             listQuestion:[
