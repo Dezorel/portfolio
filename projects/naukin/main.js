@@ -49,7 +49,7 @@ let app = new Vue({
                     'на услугах программиста. Tilda - отличный выход для тех, чьи финансы для создания ' +
                     'сайта сильно ограничены.',
                     'От 150 €',
-                    'images/servicesIcon/business_site.svg'
+                    'images/servicesIcon/tilda.svg'
                 )
             ],
             listDesign:[
@@ -80,7 +80,7 @@ let app = new Vue({
                     'стилистика которых является единой. Визуальный стиль позволяет донести нужную визуальную ' +
                     'информацию до пользователей и сформировать связь с вашим брендом.',
                     'От 350 €',
-                    'images/servicesIcon/brandbook.svg'
+                    'images/servicesIcon/firm_style.svg'
                 ),
             ],
             listMarketing:[
@@ -112,7 +112,7 @@ let app = new Vue({
                     'на поиск ошибок и слабых мест сайта с последующим их исправлением. По мимо этого в ' +
                     'услугу входит внутрянняя и внешняя SEO-оптимизация сайта',
                     'От 100 €',
-                    'images/servicesIcon/smm.svg'
+                    'images/servicesIcon/analiz_site.svg'
                 ),
             ],
             listQuestion:[
