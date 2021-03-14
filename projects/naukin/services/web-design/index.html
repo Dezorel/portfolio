@@ -83,11 +83,18 @@
     </nav>
     <!--Навигационная панель-->
 
-    <!--Услуги-->
+    <!--Веб-дизайн-->
     <div class="services">
         <div class="container">
 
-            <h2 style="font-weight: 700;">Услуги</h2>
+            <h2 style="font-weight: 700;">Веб-дизайн</h2>
+
+            <div class="row">
+                <div class="col-md-8" style="margin-top: 48px">
+                    <p>Напоминаем, что для определение более точной цены вашего заказа по веб-дизайну, вы можете воспользоваться
+                        <a href="#">калькулятором стоймости</a>.</p>
+                </div>
+            </div>
 
             <div class="multi-card">
                 <div class="card mw-100 " style="margin-top: 64px;">
@@ -124,77 +131,6 @@
                 </div>
             </div>
 
-            <div class="multi-card">
-                <div class="card mw-100 " style="margin-top: 16px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-weight:600;">Графический дизайн</h5>
-
-                        <div class="row" align="center" style="margin-top: 25px;">
-
-                            <!--Размножающиеся карточка-->
-                            <div class="col-lg-4 mt-3" v-for="item in listDesign">
-                                <div class="card purple-card h-100" style="max-width: 350px;">
-                                    <div class="card-body">
-                                        <div class="card-title row">
-                                            <div class="col-9">
-                                                <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
-                                            </div>
-                                            <div class="col">
-                                                <img class="ml-auto" :src="item.urlPicture" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="card-text multi-card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
-                                        <div class="row" style="font-weight: 600; font-size: 12px;">
-                                            <div class="col" align="left">
-                                                <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
-                                            </div>
-                                            <div class="col">
-                                                <a href="#" @click="clicked(item.id)">Подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="multi-card">
-                <div class="card mw-100 " style="margin-top: 16px;">
-                    <div class="card-body">
-                        <h5 class="card-title" style="font-weight:600;">Маркетинг</h5>
-
-                        <div class="row" align="center" style="margin-top: 25px;">
-
-                            <!--Размножающиеся карточка-->
-                            <div class="col-lg-4 mt-3" v-for="item in listMarketing">
-                                <div class="card purple-card h-100" style="max-width: 350px;">
-                                    <div class="card-body">
-                                        <div class="card-title row">
-                                            <div class="col-9">
-                                                <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
-                                            </div>
-                                            <div class="col">
-                                                <img class="ml-auto" :src="item.urlPicture" alt="">
-                                            </div>
-                                        </div>
-                                        <p class="card-text multi-card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
-                                        <div class="row" style="font-weight: 600; font-size: 12px;">
-                                            <div class="col" align="left">
-                                                <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
-                                            </div>
-                                            <div class="col">
-                                                <a href="#" @click="clicked(item.id)">Подробнее</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>
