@@ -1,0 +1,204 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: #443EDF;
+}
+a:hover{
+    text-decoration: none;
+    color: #443EDF;
+}
+/*блоки сайта*/
+
+.services{
+    padding-top: 56px;
+    background-color: #F5F5F5;
+    /*background: url('images/background_services.jpg') no-repeat;*/
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 64px;
+}
+.contacts{
+    padding-top: 56px;
+    background-color: #000000;
+    padding-bottom: 64px;
+}
+.calc{
+    padding-top: 64px;
+    background-color: #000000;
+    padding-bottom: 284px;
+}
+.question{
+    padding-top: 56px;
+    background-color: #F5F5F5;
+    padding-bottom: 64px;
+}
+.footer-panel{
+    padding-top: 56px;
+    background-color: #000000;
+    padding-bottom: 86px;
+}
+.footer-panel a{
+    font-size: 12px;
+    font-weight: 500;
+}
+/*элементы сайта*/
+.contacts-links{
+    font-size: 12px;
+    font-weight: 500;
+}
+.nav-link{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 28px;
+    color: #858585;
+}
+.active,
+.nav-link:hover {
+    color: #000000 !important;
+    border-bottom: 2px solid #492FE6;
+}
+.btn-purple-white{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.btn-purple-white:hover{
+    color: #ECE7E4;
+    background-color: #443EDF;
+}
+.btn-purple{
+    background: #443EDF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #F5F5F5;
+}
+.btn-purple:hover{
+    color: #F5F5F5;
+}
+/*Изменяю цвет */
+.navbar-light .navbar-toggler-icon {
+    background-image: url('../../images/toggler.svg');
+}
+/*Убираю рамку цвет */
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0);
+}
+/*Обводка тоглера*/
+button:focus {
+    outline: none !important;
+}
+.card{
+    max-width: 18rem;
+}
+.bg-grey{
+    background-color: #060606 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+.purple-card{
+    background: #F5F5F5;
+    border-radius: 8px;
+}
+/*.purple-card:hover{*/
+/*    background: #443EDF;*/
+/*    box-shadow: 0px 0px 25px rgba(36, 21, 217, 0.1);*/
+/*    border-radius: 8px;*/
+/*}*/
+.form-control,
+.textarea,
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active{
+    background: #0F0F0F;
+    border: none;
+    border-bottom: 1px solid #443EDF;
+}
+.form-contacts{
+    padding: 10px;
+    border: 1px solid #443EDF;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.multi-question{
+    margin-top: 10px;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.multi-card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.multi-card-text{
+    height: 230px;
+    overflow: hidden;
+}
+.plus{
+    margin-left: 105px;
+}
+/*Для того что бы убрать выделение у кнопок*/
+.btn:focus, .btn:focus:active {
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.bg-dark{
+    background: #060606 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+@media(max-width:992px){
+    .header{
+        background-size: cover;
+    }
+    .services{
+        background-size: cover;
+    }
+    .nav-link:hover {
+        border-bottom: 0px;
+    }
+    .plus{
+        margin-left: 40px;
+    }
+}
+@media(max-width:500px){
+    .card{
+        max-width: none;
+    }
+}
+@media(max-width:767px){
+    .footer-panel{
+        padding-bottom: 56px;
+    }
+    .plus{
+        margin-left: 0px;
+    }
+}
+@media(max-width: 991px){
+    .active,
+    .nav-link:hover {
+        color: #000000;
+        border-bottom: none;
+    }
+    .multi-card-text{
+        height: auto !important;
+        overflow: visible;
+    }
+}
+@media(max-width: 1200px){
+    .multi-card-text{
+        height: 270px;
+        overflow: hidden;
+    }
+}
+
+

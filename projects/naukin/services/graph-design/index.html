@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="graphDesignStyle.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--VUE-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src=graphDesignScript.js" defer></script>
+
+
+    <title>Web-Design</title>
+
+    <style>     /* v-cloak - делает так, что бы при обновлении страницы vue не показывал не подгруженные модули */
+    [v-cloak]{
+        display: none;
+    }
+    </style>
+
+</head>
+<body>
+<div id="app" v-cloak>
+
+    <!--Навигационная панель-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#F5F5F5; position: sticky; top:0px; z-index: 10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../../images/gifs/logo.gif" style="max-height: 38px; max-width: 80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://7brothers.ml/projects/naukin/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://7brothers.ml/projects/naukin/portfolio/">Портфолио</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" role="button" id="dropdownServicesLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Услуги
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownServicesLink">
+                            <a class="dropdown-item" href="https://7brothers.ml/projects/naukin/services/">Услуги</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://7brothers.ml/projects/naukin/services/web-design/">Веб-дизайн</a>
+                            <a class="dropdown-item disabled" href="#">Граф. дизайн</a>
+                            <a class="dropdown-item disabled" href="#">Маркетинг</a>
+                            <a class="dropdown-item disabled" href="#">Лендинг</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://7brothers.ml/projects/naukin/blog/">Блог</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" id="dropdownCalcLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Калькуляторы
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownCalcLink">
+                            <h6 class="dropdown-header">Выберите калькулятор</h6>
+                            <a class="dropdown-item disabled" href="#">Веб-дизайн</a>
+                            <a class="dropdown-item disabled" href="#">Граф. дизайн</a>
+                            <a class="dropdown-item disabled" href="#">Маркетинг</a>
+                            <a class="dropdown-item disabled" href="#">Лендинг</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Навигационная панель-->
+
+    <!--Веб-дизайн-->
+    <div class="services">
+        <div class="container">
+
+            <h2 style="font-weight: 700;">Веб-дизайн</h2>
+
+            <div class="row">
+                <div class="col-md-8" style="margin-top: 48px">
+                    <p>Напоминаем, что для определение более точной цены вашего заказа по веб-дизайну, вы можете воспользоваться
+                        <a href="#">калькулятором стоймости</a>.</p>
+                </div>
+            </div>
+
+            <div class="multi-card">
+                <div class="card mw-100 " style="margin-top: 64px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight:600;">Веб-дизайн</h5>
+
+                        <div class="row" align="center" style="margin-top: 25px;">
+                            <!--Размножающиеся карточка-->
+                            <div class="col-lg-4 mt-3" v-for="item in listServices">
+                                <div class="card purple-card h-100" style="max-width: 350px;">
+                                    <div class="card-body">
+                                        <div class="card-title row">
+                                            <div class="col-9">
+                                                <p class="card-title" style="font-weight: 600; font-size: 14px;" align="left">{{item.title}}</p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="ml-auto" :src="item.urlPicture" alt="">
+                                            </div>
+                                        </div>
+                                        <p class="card-text multi-card-text" style="font-weight: 500; font-size: 14px;" align="left">{{item.description}}</p>
+                                        <div class="row" style="font-weight: 600; font-size: 12px;">
+                                            <div class="col" align="left">
+                                                <p>Цена: <span style="color: #443EDF;">{{item.price}}</span></p>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#" @click="clicked(item.id)">Подробнее</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Конец Услуги-->
+
+    <!--Калькулятор-->
+    <div class="calc text-white">
+        <div class="container">
+            <!--INFO-->
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 style="font-weight: 700;">Калькулятор</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p style="font-weight: 500; margin-top: 48px;">Напоминаем, что для определение более точной цены вашего заказа
+                        по веб-дизайну, вы можете воспользоваться калькулятором стоймости.</p>
+                </div>
+            </div>
+            <!--Конец INFO-->
+
+            <!--Кальк-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bg-dark" style="padding: 31px 24px">
+                        <h5 style="font-weight: 600;font-size: 18px;">Выберите услугу:</h5>
+
+                        <select class="custom-select custom-select-lg mb-3" style="margin-top: 16px">
+                            <option selected>Выберите что-то</option>
+                            <option value="1">Очень дешёвый лэндинг</option>
+                            <option value="2">Не очень дешёвый лэндинг</option>
+                            <option value="3">Я линукс</option>
+                        </select>
+                        <p>Внимание идёт загрузка очень важных данных. пожалуста подождите 1 бесконечноть. Спасибо!</p>
+                        <div class="row">
+                            <div class="col-2 offset-10">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 offset-md-3" align="center">
+                    <p>Спасибо что воспользовались Naukin Design!</p>
+                </div>
+            </div>
+            <!--Конец Кальк-->
+
+
+        </div>
+    </div>
+    <!--Конец Калькулятор-->
+
+    <!--Контакты-->
+    <div class="contacts text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 style="font-weight: 700;">Свяжитесь с нами удобным способом</h2>
+                    <p style="font-weight: 500; margin-top: 24px;">Вы можете связаться с нами через почту,
+                        социальные сети, а также вы можете отправить заявку через кулькуляторы стоимости.</p>
+                    <div class="row contacts-links"style="margin-top: 96px;">
+                        <div class="col-md">
+                            <p>Номер телефона: <br>
+                                <span style="color: #C1C1C1;">+373 069 65 89 75 </span>
+                            </p>
+                            <p>Социальные сети:<br>
+                                <a href="#">Instagram</a><br>
+                                <a href="#">VKontakte</a><br>
+                                <a href="#">Behance</a><br> </p>
+
+                        </div>
+                        <div class="col-md">
+                            <p>Связь по почте<br>
+                                <span style="color: #C1C1C1;">design@naukin.com</span></p>
+
+                            <p>
+                                Калькуляторы: <br>
+                                <a href="#">Веб-дизайн кальклятор</a><br>
+                                <a href="#">Граф.дизайн калькулятор</a><br>
+                                <a href="#">Маркетинг калькулятор</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="w-100" src="../../images/gifs/mail.gif" alt="">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 83px">
+                <div class="col-md-5 text-white">
+                    <form action="#" class="form-contacts">
+                        <label class="mt-3" for="name">Имя</label>
+                        <input src="images/logo.svg" class="form-control text-white" type="text" id="name" required>
+                        <label class="mt-3" for="email">Почта</label>
+                        <input class="form-control text-white" type="email" id="email" required>
+                        <label class="mt-3" for="message">Описание заказа</label>
+                        <textarea class="form-control text-white" name="" id="message" rows="7"></textarea>
+                        <button class="btn btn-block btn-purple mt-2" type="submit">Отправить сообщение</button>
+                    </form>
+                </div>
+                <div class="col-md-6 offset-md-1">
+                    <h2 style="font-weight: 700;">Опишите свою задачу в сообщении</h2>
+                    <p style="font-weight: 500; margin-top: 48px">Мы ответим на ваше сообщение в течение часа с
+                        подробным изложением по вашей задаче. Ответ придёт на ту почту, что вы укажите.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Конец Контакты-->
+
+    <!--Вопросы-->
+    <div class="question">
+        <div class="container">
+
+            <h2 style="font-weight: 700;">Остались вопросы?</h2>
+
+            <!--Вопрос - ответ-->
+            <div class="multi-question" v-for="item in listQuestion">
+                <div class="row align-items-center">
+                    <div class="col-10 mt-3">
+                        <p class="h-100" style="font-weight: 500;">
+                            {{item.question}}
+                        </p>
+                    </div>
+                    <div class="col-2 ml-auto">
+                        <a class="btn plus" data-toggle="collapse" :href="'#'+item.id" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <img src="../../images/plus.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse multi-collapse" :id="item.id">
+                    <div style="margin-bottom: 10px;">
+                        {{item.answer}}
+                    </div>
+                </div>
+            </div>
+            <!--Конец Вопрос - ответ-->
+
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="../../images/logo-questons.svg" class="w-100">
+                </div>
+                <div class="col-md-7 offset-md-1">
+                    <p style="margin-top: 74px; font-weight: 500;">Web-студия Naukin Design: качественный и уникальный дизайн и профессиональное создание сайтов в Молдове.
+                        Команда талантливых, молодых и ответственных специалистов в своих сферах, находящих индивидуальный
+                        подход к каждому клиенту — именно так можно описать студию дизайна Naukin Design - несомненно сильного
+                        игрока на Молдавском рынке дизайна и веб разработки. Наши способности и опыт делают из нас одной из
+                        самых перспективных студий в Кишинёве. Мы избрали свой собственный путь развития и работы, благодаря
+                        которому мы станем лидерами в сфере графического и web дизайна.</p>
+
+                    <!--Остались вопросы?-->
+                    <p style="font-weight: 500;">Остались ещё вопросы?
+                        <a data-toggle="collapse" href="#questions" role="button" aria-expanded="false"
+                           aria-controls="multiCollapseExample1">
+                            Продолжить чтение
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!--Остались вопросы? (ответы)-->
+            <div class="have-question" style="margin-top: 24px;">
+
+                <div class="answer">
+                    <div class="collapse multi-collapse" id="questions">
+                        <div style="font-weight: 500;">
+
+                            <p>
+                                <span style="font-weight: 700;">Благодаря чему клиенты заказывают дизайн и разработку у студии Naukin Design</span>
+                            </p>
+                            <p>
+                                Всё благодаря индивидуальному подходу и опыту которым обладает наша студия. Наши принципы работы основываются на получении
+                                результата, который будет долговечен и принесёт клиенту бизнесу клиента.
+                                Мы полностью погружаемся в сферу клиента и находим самые эффективные решения поставленных перед нами задач.
+                                Мы представляем один из самых широких спектров услуг графического и веб дизайна в Кишинёве и Молдове, также не
+                                забывая про услуги маркетинга.
+                            </p>
+                            <p>
+                                Среди наших услуг вебдизайна есть: Лендинг, визитка, Сайт Tilda, Сайт-каталог, Интернет-магазин, Мобильное приложение и Промо-сайт.
+                            </p>
+                            <p>
+                                Среди наших услуг дизайна есть: Разработка логотипа, Брендбук, Разработка
+                                фирменного стиля, Печатная продукция, Разработка упаковки или этикетки, Дизайн презентаций.
+                            </p>
+                            <p>
+                                Среди наших услуг маркетинга есть: SEO-продвижение сайта,
+                                SMM продвижение, Контекстная реклама, Сбор семантического ядра сайта,
+                                Анализ и доработка готового проекта. Постоянная работа над улучшением наших
+                                навыков помогает нашей компании не отставать от мировых стандартов. В работе наша
+                                команда выбирает только прогрессивные решения в мире дизайна и веб разработок. Мы
+                                отказались от скучных, устаревший и просто не эффективных решений.
+                            </p>
+                            <p>
+                                Мы готовы обеспечить своевременную поддержку 24 часа в сутки и готовы взяться за
+                                проект не зависимо от числа в календаре.
+                                Дизайн студия Naukin Design работает, чтобы наши клиенты росли и развивались, это
+                                подтверждают успешный опыт сотрудничества с разного рода компаниями Молдовы.
+                            </p>
+
+                            <p>
+                                <span style="font-weight: 700;">Что такое дизайн от Naukin Design</span>
+                            </p>
+                            <p>
+                                Это работа по обеспечению вашего бизнеса качественным дизайном и продвижением в сети.
+                                Наша компания использует для этого все свои навыки и возможности, которые смогут начать
+                                приносить прибыль веб-ресурсу как можно раньше:
+                            </p>
+                            <p>
+                                SEO-продвижение способствует выходу ресурса на высокие позиции в поисковых системах,
+                                тем самым обеспечивая сайт органическим трафиком.
+                            </p>
+                            <p>
+                                SMM – продвижение компании в социальных сетях, создание контент плана,
+                                подготовка контекстной рекламы, ведение страниц.
+                            </p>
+                            <p>
+                                Контекстная реклама – это платный инструмент маркетинга позволяющий найти
+                                заинтересованного клиента и привести его на сайт.
+                            </p>
+                            <p>
+                                Семантическое ядро – анализ поисковых запросов по ключевым темам отрасли для лучшей оптимизации веб-сервиса и покупной рекламы.
+                            </p>
+
+                            <p>
+                                <span style="font-weight: 700;">Основные виды работ в вебдизайне студии Naukin Design в Кишинёве: что можно заказать</span>
+                            </p>
+                            <p>
+                                Наши сотрудники могут выполнить самые разные виды услуг в области разработки и дизайна всех видов сайтов среди них:
+                            </p>
+                            <ul>
+                                <li>Landing Page;</li>
+                                <li>Сайт визитка;</li>
+                                <li>Сайт на конструкторе Tilda;</li>
+                                <li>Сайт-каталог;</li>
+                                <li>Интернет-магазин;</li>
+                                <li>Промо-сайт;</li>
+                            </ul>
+                            <p>
+                                Каждый из сайтов имеет свои преимущества и мы готовы вам помочь с выбором наиболее
+                                подходящей услуги, для этого вам нужно будет описать свои пожелания и сказать о целях,
+                                мы подберём оптимальное решение для достижения ваших бизнес-целей.
+                            </p>
+                            <p>
+                                Для этого мы делаем следующее:
+                            </p>
+                            <ul>
+                                <li>Занимаемся изучением отрасли и её особенностей</li>
+                                <li>Улучшаем интерфейс и функционал сайта</li>
+                                <li>Обеспечиваем поддержку</li>
+                                <li>Дорабатываем и улучшаем существующей контент</li>
+                                <li>Даём рекомендации по продвижению сайта в сети</li>
+                            </ul>
+
+                            <p>
+                                <span style="font-weight: 700;">Naukin Design в Кишинёве и Молдове</span>
+                            </p>
+                            <p>
+                                Какова причина выбора нашей студии? Главная причина в справедливых ценах и качественной работе. Вам нужен редизайн сайта? Необходимо создание логотипа? Быстрое и качественное создание интернет-магазина? Тогда наша студия Naukin Design может вам это предложить.
+                                Осталось только оставить свои контактные данные или позвонить.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Конец Вопросы-->
+
+    <!--Footer-->
+    <div class="footer-panel text-white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="row ">
+                        <div class="col-12">
+                            <img src="../../images/logo_footer.svg" style="color: white; margin-bottom: 32px">
+                        </div>
+                        <div class="col-12">
+                            <p style="font-weight: 500;font-size: 12px;">Номер телефона:    <br>
+                                <span style="color: #C1C1C1;">+373 069 65 89 75</span>
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <p style="font-weight: 500;font-size: 12px;">Связь по почте:    <br>
+                                <span style="color: #C1C1C1">eugeniu@naukin.com</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <p>Веб-дизайн:</p>
+                    <a href="#">Лэндинг</a><br>
+                    <a href="#">Сайт визитка</a><br>
+                    <a href="#">Сайт Tilda</a><br>
+                    <a href="#">Сайт-каталог</a><br>
+                    <a href="#">Интернет-магазин</a><br>
+                    <a href="#">Мобильное приложение</a><br>
+                    <a href="#">Промо-сайт</a><br>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <p>Граф. дизайн:</p>
+                    <a href="#">Разработка логотипа</a><br>
+                    <a href="#">Брэндбук</a><br>
+                    <a href="#">Разработка фир.стиля</a><br>
+                    <a href="#">Печатная продукция</a><br>
+                    <a href="#">Разработка этикетки</a><br>
+                    <a href="#">Разработка этикетки</a><br>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <p>Маркетинг:</p>
+                    <a href="#">Семантическое ядро</a><br>
+                    <a href="#">SMM продвижение сайта</a><br>
+                    <a href="#">Анализ и доработка сайта</a><br>
+                    <a href="#">SEO продвижение сайта</a><br>
+                    <a href="#">Контекстная реклама</a><br>
+                </div>
+                <div class="col-md-2">
+                    <p>Калькуляторы:</p>
+                    <a href="#">Веб-дизайн калькулятор</a><br>
+                    <a href="#">Граф.дизайн калькулятор</a><br>
+                    <a href="#">Маркетинг калькулятор</a><br>
+                </div>
+                <div class="col-md-2">
+                    <p>Социальные сети: <br>
+                        <a href="#">Instagram</a><br>
+                        <a href="#">VKontakte</a><br>
+                        <a href="#">Behance</a><br>
+                        <a href="#">Facebook</a>
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--Конец Footer-->
+
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</body>
+</html>
