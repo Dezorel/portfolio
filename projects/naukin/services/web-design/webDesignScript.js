@@ -19,7 +19,7 @@ let app = new Vue({
     el: '#app',
     data(){
         return{
-            listWebDesign:[
+            listServices:[
                 new Card(
                     1,
                     'Лендинг',
