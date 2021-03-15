@@ -141,6 +141,10 @@ button:focus {
     height: 230px;
     overflow: hidden;
 }
+.multi-card-title{
+    height: 40px;
+    overflow: hidden;
+}
 .plus{
     margin-left: 105px;
 }
@@ -190,6 +194,10 @@ button:focus {
         border-bottom: none;
     }
     .multi-card-text{
+        height: auto !important;
+        overflow: visible;
+    }
+    .multi-card-title{
         height: auto !important;
         overflow: visible;
     }
