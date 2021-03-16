@@ -87,7 +87,7 @@
                              <img :src=posts[0].image class="w-100" style="border-radius: 8px;">
                              <h3 class="main-post-title">{{posts[0].title}}</h3>
                              <p class="main-post-text">{{posts[0].description}}</p>
-                             <a class="main-post-link" @click="createPost(posts[0].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
+                             <a class="main-post-link" @click="createPost(posts[0].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
                          </div>
                      </div>
 
@@ -100,7 +100,7 @@
                                  <img :src=posts[1].image class="w-100" style="border-radius: 8px;">
                                  <h6 class="second-post-title">{{posts[1].title}}</h6>
                                  <p class="second-post-text">{{posts[1].description}}</p>
-                                 <a class="main-post-link" @click="createPost(posts[1].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
+                                 <a class="main-post-link" @click="createPost(posts[1].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
                              </div>
                          </div>
 
@@ -113,7 +113,7 @@
                                  <img :src=posts[2].image class="w-100" style="border-radius: 8px;">
                                  <h6 class="second-post-title">{{posts[2].title}}</h6>
                                  <p class="second-post-text">{{posts[2].description}}</p>
-                                 <a class="main-post-link" @click="createPost(posts[2].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
+                                 <a class="main-post-link" @click="createPost(posts[2].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
                              </div>
                          </div>
 
@@ -135,7 +135,7 @@
                                                  <h5>{{posts[3].title}}</h5>
                                              </div>
                                              <div class="col-md-2 col-sm-3">
-                                                 <a style="font-weight: 600" @click="createPost(posts[3].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                                 <a style="font-weight: 600" @click="createPost(posts[3].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
                                              </div>
                                          </div>
                                      </div>
@@ -145,7 +145,7 @@
                                                 <h5>{{posts[4].title}}</h5>
                                             </div>
                                             <div class="col-md-2 col-sm-3">
-                                                <a style="font-weight: 600" @click="createPost(posts[4].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                                <a style="font-weight: 600" @click="createPost(posts[4].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +155,7 @@
                                                  <h5>{{posts[5].title}}</h5>
                                              </div>
                                              <div class="col-md-2 col-sm-3">
-                                                 <a style="font-weight: 600" @click="createPost(posts[5].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                                 <a style="font-weight: 600" @click="createPost(posts[5].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
                                              </div>
                                          </div>
                                      </div>
@@ -179,7 +179,7 @@
                                                  <h5>{{post.title}}</h5>
                                              </div>
                                              <div class="col-md-2 col-sm-3">
-                                                 <a style="font-weight: 600" @click="createPost(posts[id].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                                 <a style="font-weight: 600" @click="createPost(posts[id].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
                                              </div>
                                      </div>
                                  </div>
