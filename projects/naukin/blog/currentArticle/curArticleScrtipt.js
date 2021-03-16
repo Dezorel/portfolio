@@ -35,7 +35,7 @@ let app = new Vue({
             let link = 'http://localhost/back-end/naukinTest/posts/'+ this.postNameToAPI
             let res = await fetch(link)
             this.post = await res.json()        //получаю данные в json
-
+            
 
             let link2 = 'http://localhost/back-end/naukinTest/postswithout/'+this.postNameToAPI
             let res2 = await fetch(link2)
