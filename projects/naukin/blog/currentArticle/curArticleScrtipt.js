@@ -8,12 +8,10 @@ let app = new Vue({
     created(){
         let url = window.location.hash
         if(url){
-            console.log(url)
             this.postName = url.substr(1,url.length)
-            console.log(this.postName)
             let arrayOfStrings = this.postName.split('-')
-            let result = arrayOfStrings.join(' ')
-            console.log(result.trim())
+            let result = arrayOfStrings.join(' ').trim()
+            console.log(result)
         }
     }
 })

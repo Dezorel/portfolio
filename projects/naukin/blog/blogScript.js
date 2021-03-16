@@ -4,5 +4,13 @@ let app = new Vue({
         return{
             postName: ''
         }
+    },
+    methods:{
+        createPost() {
+            let url = this.postName.toLowerCase().trim()
+            let arrayOfStrings = url.split(' ')
+            let result = arrayOfStrings.join('-')
+            this.postName = result
+        }
     }
 })
