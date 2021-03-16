@@ -84,11 +84,23 @@ a:hover{
 .card-text{
     font-size: 18px;
 }
+.post-image{
+    background-size: cover;
+    margin-top: -320px;
+}
+@media(max-width: 1200px){
+    .post-image{
+        margin-top: -200px;
+    }
+}
 @media(max-width: 991px){
     .active,
     .nav-link:hover {
         color: #000000;
         border-bottom: none;
+    }
+    .post-image{
+        margin-top: 0px;
     }
 }
 @media(max-width: 517px) {
