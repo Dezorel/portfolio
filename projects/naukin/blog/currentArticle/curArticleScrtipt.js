@@ -7,6 +7,10 @@ let app = new Vue({
     },
     created(){
         let url = window.location.hash
-        console.log(url)
+        if(url){
+            console.log(url)
+            this.postName = url.substr(1,url.length)
+            console.log(this.postName)
+        }
     }
 })
