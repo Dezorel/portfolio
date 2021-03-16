@@ -2,7 +2,8 @@ let app = new Vue({
     el: '#app',
     data(){
         return{
-            postName: ''
+            postName: '',
+            posts: null,
         }
     },
     methods:{
@@ -23,7 +24,13 @@ let app = new Vue({
                 else { res += s; }
             }
             return res;
-        }
+        },
+    },
+    created: async function (){
+            let link = 'https://jsonplaceholder.typicode.com/posts'
+            let res = await fetch(link)
+            this.posts = await res.json()        //получаю данные в json
+            console.log(this.posts)
 
     }
 })
