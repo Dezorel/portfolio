@@ -1,8 +1,7 @@
 let app = new Vue({
     el: '#app',
     methods:{
-        addInLocalStorage(){
-            let id = 10
+        addPostIDInLocalStorage(id){
             if(id){
                 localStorage.postID = id
             }
