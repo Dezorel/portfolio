@@ -48,7 +48,6 @@ let app = new Vue({
     },
     watch:{
         async postName(){
-            this.postNameToAPI = this.postName()
             await this.getContent()
             document.location.reload()
         }
