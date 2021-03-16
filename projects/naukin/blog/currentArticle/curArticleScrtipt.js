@@ -41,6 +41,7 @@ let app = new Vue({
             let res2 = await fetch(link2)
             this.posts = await res2.json()        //получаю данные в json
             this.posts = this.posts.reverse()
+            console.log('get content')
         }
 },
     async created(){
