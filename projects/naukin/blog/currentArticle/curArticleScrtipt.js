@@ -15,6 +15,7 @@ let app = new Vue({
         let arrayOfStrings = url.split(' ')
         let result = arrayOfStrings.join('-')
         this.postName = this.translit(result)
+        document.location.reload();
     },
     translit(str){
         let ru=("А-а-Б-б-В-в-Ґ-ґ-Г-г-Д-д-Е-е-Ё-ё-Є-є-Ж-ж-З-з-И-и-І-і-Ї-ї-Й-й-К-к-Л-л-М-м-Н-н-О-о-П-п-Р-р-С-с-Т-т-У-у-Ф-ф-Х-х-Ц-ц-Ч-ч-Ш-ш-Щ-щ-Ъ-ъ-Ы-ы-Ь-ь-Э-э-Ю-ю-Я-я").split("-")
