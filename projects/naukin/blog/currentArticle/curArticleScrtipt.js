@@ -11,6 +11,9 @@ let app = new Vue({
             console.log(url)
             this.postName = url.substr(1,url.length)
             console.log(this.postName)
+            let arrayOfStrings = this.postName.split('-')
+            let result = arrayOfStrings.join(' ')
+            console.log(result.trim())
         }
     }
 })
