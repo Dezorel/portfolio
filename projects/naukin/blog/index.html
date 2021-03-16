@@ -88,7 +88,8 @@
                              От разработки фирменного стиля до создания уникального дизайна веб-сайтов.
                              Разработка дизайн-систем для вашего бренда:  От разработки фирменного стиля
                              до создания уникального дизайна веб-сайтов. Разработка дизайн-систем для вашего бренда...</p>
-                         <a class="main-post-link" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" @click="addPostIDInLocalStorage()">Читать далее</a>
+                         <a v-if="postName" class="main-post-link" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post='+ postName">Читать далее</a>
+                         <a v-else class="main-post-link" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" >Читать далее</a>
                      </div>
                  </div>
                  <div class="col-md-4 card card-deck sec">
@@ -101,7 +102,8 @@
                                  Разработка дизайн-систем для вашего бренда:  От разработки фирменного стиля
                                  до создания уникального дизайна веб-сайтов. Разработка дизайн-систем для вашего бренда...
                              </p>
-                             <a class="second-post-link" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" @click="addPostIDInLocalStorage()">Читать далее</a>
+                             <a v-if="postName" class="main-post-link" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post='+ postName">Читать далее</a>
+                             <a v-else class="main-post-link" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" >Читать далее</a>
                          </div>
                      </div>
                      <div class="row">
@@ -113,7 +115,8 @@
                                  Разработка дизайн-систем для вашего бренда:  От разработки фирменного стиля
                                  до создания уникального дизайна веб-сайтов. Разработка дизайн-систем для вашего бренда...
                              </p>
-                             <a class="second-post-link" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" @click="addPostIDInLocalStorage()">Читать далее</a>
+                             <a v-if="postName" class="main-post-link" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post='+ postName">Читать далее</a>
+                             <a v-else class="main-post-link" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" >Читать далее</a>
                          </div>
                      </div>
                  </div>
@@ -132,7 +135,7 @@
                                              <h5>UX Drone</h5>
                                          </div>
                                          <div class="col-md-2 col-sm-3">
-                                             <a style="font-weight: 600" @click="addPostIDInLocalStorage()" href="https://7brothers.ml/projects/naukin/blog/currentArticle/">Читать</a>
+                                             <a style="font-weight: 600" href="https://7brothers.ml/projects/naukin/blog/currentArticle/">Читать</a>
                                          </div>
                                      </div>
                                      <div class="row mt-3">
@@ -140,7 +143,7 @@
                                              <h5>Naukin Design и A’ Branding Award</h5>
                                          </div>
                                          <div class="col-md-2 col-sm-3">
-                                             <a style="font-weight: 600" @click="addPostIDInLocalStorage()" href="https://7brothers.ml/projects/naukin/blog/currentArticle/">Читать</a>
+                                             <a style="font-weight: 600" href="https://7brothers.ml/projects/naukin/blog/currentArticle/">Читать</a>
                                          </div>
                                      </div>
                                      <div class="row mt-3">
@@ -148,7 +151,7 @@
                                              <h5>UX Drone</h5>
                                          </div>
                                          <div class="col-md-2 col-sm-3">
-                                             <a style="font-weight: 600" @click="addPostIDInLocalStorage()" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" >Читать</a>
+                                             <a style="font-weight: 600" href="https://7brothers.ml/projects/naukin/blog/currentArticle/" >Читать</a>
                                          </div>
                                      </div>
                                      <!--Конец Статьи-->
@@ -171,7 +174,7 @@
                                          <h5>P5.JS it is fine XD</h5>
                                      </div>
                                      <div class="col-md-2 col-sm-3">
-                                         <a style="font-weight: 600" @click="addPostIDInLocalStorage()" href="https://7brothers.ml/projects/naukin/blog/currentArticle/">Читать</a>
+                                         <a style="font-weight: 600" href="https://7brothers.ml/projects/naukin/blog/currentArticle/">Читать</a>
                                      </div>
                                  </div>
 
