@@ -84,12 +84,9 @@
 
                      <div class="first-post">
                          <div class="card card-deckline">
-                             <img src="../images/blog-img/photo.png" class="w-100" style="border-radius: 8px;">
+                             <img :src=posts[0].image class="w-100" style="border-radius: 8px;">
                              <h3 class="main-post-title">{{posts[0].title}}</h3>
-                             <p class="main-post-text">Разработка дизайн-систем для вашего бренда:
-                                 От разработки фирменного стиля до создания уникального дизайна веб-сайтов.
-                                 Разработка дизайн-систем для вашего бренда:  От разработки фирменного стиля
-                                 до создания уникального дизайна веб-сайтов. Разработка дизайн-систем для вашего бренда...</p>
+                             <p class="main-post-text">{{posts[0].description}}</p>
                              <a class="main-post-link" @click="createPost(posts[0].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
                          </div>
                      </div>
@@ -100,13 +97,9 @@
 
                          <div class="row">
                              <div class="col" style="margin-bottom: 24px">
-                                 <img src="../images/blog-img/photo.png" class="w-100" style="border-radius: 8px;">
+                                 <img :src=posts[1].image class="w-100" style="border-radius: 8px;">
                                  <h6 class="second-post-title">{{posts[1].title}}</h6>
-                                 <p class="second-post-text">Разработка дизайн-систем для вашего бренда:
-                                     От разработки фирменного стиля до создания уникального дизайна веб-сайтов.
-                                     Разработка дизайн-систем для вашего бренда:  От разработки фирменного стиля
-                                     до создания уникального дизайна веб-сайтов. Разработка дизайн-систем для вашего бренда...
-                                 </p>
+                                 <p class="second-post-text">{{posts[1].description}}</p>
                                  <a class="main-post-link" @click="createPost(posts[1].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
                              </div>
                          </div>
@@ -117,13 +110,9 @@
 
                          <div class="row">
                              <div class="col sec" style="margin-bottom: 24px">
-                                 <img src="../images/blog-img/photo1.png" class="w-100" style="border-radius: 8px;">
+                                 <img :src=posts[2].image class="w-100" style="border-radius: 8px;">
                                  <h6 class="second-post-title">{{posts[2].title}}</h6>
-                                 <p class="second-post-text">Разработка дизайн-систем для вашего бренда:
-                                     От разработки фирменного стиля до создания уникального дизайна веб-сайтов.
-                                     Разработка дизайн-систем для вашего бренда:  От разработки фирменного стиля
-                                     до создания уникального дизайна веб-сайтов. Разработка дизайн-систем для вашего бренда...
-                                 </p>
+                                 <p class="second-post-text">{{posts[2].description}}</p>
                                  <a class="main-post-link" @click="createPost(posts[2].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать далее</a>
                              </div>
                          </div>

@@ -28,10 +28,10 @@ let app = new Vue({
         },
     },
     created: async function (){
-            let link = 'https://jsonplaceholder.typicode.com/posts'
+            let link = 'http://localhost/back-end/naukinTest/posts'
             let res = await fetch(link)
             this.posts = await res.json()        //получаю данные в json
-            console.log(this.posts)
+            this.posts = this.posts.reverse()
 
     }
 })
