@@ -80,40 +80,17 @@
          <div class="card bg-dark text-white">
              <img class="w-100 post-image" src="../../images/blog-img/photo.png">
              <div class="card-img-overlay h-100 d-flex flex-column justify-content-end container">
-                 <h3 class="card-title">UX Design</h3>
-                 <p class="card-text">Разработка дизайн-систем для вашего бренда:  От разработки
-                     фирменного стиля до создания уникального дизайна веб-сайтов.</p>
+                 <h3 class="card-title">{{posts[0].title}}</h3>
+                 <p class="card-text">Description</p>
              </div>
          </div>
          <div class="container">
              <div class="row">
                  <div class="col-md-8">
-                     <h3 style="margin-top: 56px; font-weight: bold; font-size: 24px;">Лол кек чебурек</h3>
-                     <p style="margin-top: 16px; font-weight: 500;">2021.01.25</p>
-                     <p style="margin-top: 32px; font-size: 18px; font-weight: 500;">Товарищи! сложившаяся структура организации представляет собой
-                         интересный эксперимент проверки направлений прогрессивного развития. Не следует,
-                         однако забывать, что дальнейшее развитие различных форм деятельности способствует
-                         подготовки и реализации форм развития.
-
-                         С другой стороны постоянное информационно-пропагандистское обеспечение нашей
-                         деятельности обеспечивает широкому кругу (специалистов) участие в формировании
-                         позиций, занимаемых участниками в отношении поставленных задач.
-                         Разнообразный и богатый опыт консультация с широким активом обеспечивает
-                         широкому кругу. Равным образом постоянный количественный рост и сфера нашей
-                         активности играет важную роль в формировании системы обучения кадров, соответствует
-                         насущным потребностям. Равным образом рамки и место обучения кадров влечет за
-                         собой процесс внедрения и модернизации системы обучения кадров, соответствует
-                         насущным потребностям.
-                         Товарищи! консультация с широким активом позволяет выполнять важные задания по
-                         разработке систем массового участия.   Повседневная практика показывает,
-                         что укрепление и развитие структуры обеспечивает широкому кругу (специалистов)
-                         участие в формировании дальнейших направлений развития.
-                         Товарищи! сложившаяся структура организации представляет собой интересный
-                         эксперимент проверки направлений прогрессивного развития. Равным образом
-                         консультация с широким активом требуют определения и уточнения модели развития.
-                         Равным образом консультация с широким активом требуют определения и уточнения
-                         модели развития. Равным образом консультация.</p>
-                     <xmp><img src="../../images/blog-img/photo.png" class="w-100"></xmp>
+                     <h3 style="margin-top: 56px; font-weight: bold; font-size: 24px;">{{posts[0].title}}</h3>
+                     <p style="margin-top: 16px; font-weight: 500;">2021.01.25 + {{posts[0].id}}</p>
+                     <p style="margin-top: 32px; font-size: 18px; font-weight: 500;">{{posts[0].body}}</p>
+<!--                     <img src="../../images/blog-img/photo.png" class="w-100">-->
                  </div>
 
                  <div class="col-md"></div>
@@ -142,6 +119,7 @@
                      </div>
                  </div>
              </div>
+
              <div class="more">
                  <p style="font-weight: bold;font-size: 40px; color: black; margin-bottom: 32px">Читайте ещё</p>
                  <div class="row">
@@ -150,36 +128,63 @@
                              <div class="row">
                                  <!--Статьи-->
                                  <div class="col-md">
-                                     <div class="row mt-3">
-                                         <div class="col-md-10 col-sm-9">
-                                             <h5>UX Drone</h5>
-                                         </div>
-                                         <div class="col-md-2 col-sm-3">
-                                             <a style="font-weight: 600" href="#">Читать</a>
-                                         </div>
-                                     </div>
-                                     <div class="row mt-3">
-                                         <div class="col-md-10 col-sm-9">
-                                             <h5>Naukin Design и A’ Branding Award</h5>
-                                         </div>
-                                         <div class="col-md-2 col-sm-3">
-                                             <a style="font-weight: 600" href="#">Читать</a>
+                                     <div class="more-first">
+                                         <div class="row mt-3">
+                                             <div class="col-md-10 col-sm-9">
+                                                 <h5>{{posts[3].title}}</h5>
+                                             </div>
+                                             <div class="col-md-2 col-sm-3">
+                                                 <a style="font-weight: 600" @click="createPost(posts[3].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                             </div>
                                          </div>
                                      </div>
-                                     <div class="row mt-3">
-                                         <div class="col-md-10 col-sm-9">
-                                             <h5>UX Drone</h5>
+                                     <div class="more-second">
+                                         <div class="row mt-3">
+                                             <div class="col-md-10 col-sm-9">
+                                                 <h5>{{posts[4].title}}</h5>
+                                             </div>
+                                             <div class="col-md-2 col-sm-3">
+                                                 <a style="font-weight: 600" @click="createPost(posts[4].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                             </div>
                                          </div>
-                                         <div class="col-md-2 col-sm-3">
-                                             <a style="font-weight: 600" href="#">Читать</a>
+                                     </div>
+                                     <div class="more-third">
+                                         <div class="row mt-3">
+                                             <div class="col-md-10 col-sm-9">
+                                                 <h5>{{posts[5].title}}</h5>
+                                             </div>
+                                             <div class="col-md-2 col-sm-3">
+                                                 <a style="font-weight: 600" @click="createPost(posts[5].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                             </div>
                                          </div>
                                      </div>
                                      <!--Конец Статьи-->
                                  </div>
                              </div>
                              <div style="margin-top: 16px">
-                                 <a style="font-weight: 600" href="#" >Посмотреть все статьи</a>
+                                 <p style="font-weight: 500;">
+                                     <a data-toggle="collapse" href="#more" role="button" aria-expanded="false"
+                                        aria-controls="multiCollapseExample1">
+                                         Посмотреть все статьи
+                                     </a>
+                                 </p>
                              </div>
+
+                             <!--Больше статей-->
+                             <div class="collapse multi-collapse" id="more">
+                                 <div v-for="(post, id) in posts"  class="all-posts">
+                                     <div v-if="id >5" class="row mt-3">
+                                         <div class="col-md-10 col-sm-9">
+                                             <h5>{{post.title}}</h5>
+                                         </div>
+                                         <div class="col-md-2 col-sm-3">
+                                             <a style="font-weight: 600" @click="createPost(posts[id].title)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName">Читать</a>
+                                         </div>
+                                     </div>
+                                 </div>
+
+                             </div>
+
                          </div>
                      </div>
                  </div>
