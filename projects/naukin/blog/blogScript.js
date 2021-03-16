@@ -7,7 +7,8 @@ let app = new Vue({
         }
     },
     methods:{
-        createPost() {
+        createPost(temp) {
+            this.postName = temp
             let url = this.postName.toLowerCase().trim()
             let arrayOfStrings = url.split(' ')
             let result = arrayOfStrings.join('-')
