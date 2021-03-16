@@ -101,7 +101,7 @@
                              <h6 style="margin-top: 16px;font-weight: bold;">{{posts[0].title}}</h6>
                              <p style="margin-top: 8px; font-size: 12px;font-weight: 500;">{{posts[0].description}}
                              </p>
-                             <a href="https://7brothers.ml/projects/naukin/blog/currentArticle/" style="font-size: 12px;font-weight: 600; margin-bottom: 16px">Читать далее</a>
+                             <a @click="createPost(posts[5].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName" style="font-size: 12px;font-weight: 600; margin-bottom: 16px">Читать далее</a>
                          </div>
                      </div>
                      <div class="row">
@@ -110,7 +110,7 @@
                              <h6 style="margin-top: 16px;font-weight: bold;">{{posts[1].title}}</h6>
                              <p style="margin-top: 8px; font-size: 12px;font-weight: 500;">{{posts[1].description}}
                              </p>
-                             <a href="https://7brothers.ml/projects/naukin/blog/currentArticle/" style="font-size: 12px;font-weight: 600; margin-bottom: 16px">Читать далее</a>
+                             <a @click="createPost(posts[5].postName)" :href="'https://7brothers.ml/projects/naukin/blog/currentArticle/'+'?post=#'+ postName" style="font-size: 12px;font-weight: 600; margin-bottom: 16px">Читать далее</a>
                          </div>
                      </div>
                  </div>
