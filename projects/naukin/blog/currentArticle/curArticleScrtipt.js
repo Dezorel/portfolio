@@ -15,8 +15,6 @@ let app = new Vue({
         let arrayOfStrings = url.split(' ')
         let result = arrayOfStrings.join('-')
         this.postName = this.translit(result)
-        document.location.assign('https://7brothers.ml/projects/naukin/blog/currentArticle/?post=#' + this.postName)
-        document.location.reload()
     },
     translit(str){
         let ru=("А-а-Б-б-В-в-Ґ-ґ-Г-г-Д-д-Е-е-Ё-ё-Є-є-Ж-ж-З-з-И-и-І-і-Ї-ї-Й-й-К-к-Л-л-М-м-Н-н-О-о-П-п-Р-р-С-с-Т-т-У-у-Ф-ф-Х-х-Ц-ц-Ч-ч-Ш-ш-Щ-щ-Ъ-ъ-Ы-ы-Ь-ь-Э-э-Ю-ю-Я-я").split("-")
@@ -30,19 +28,29 @@ let app = new Vue({
         }
         return res;
     },
+        async getContent(){
+            let url = window.location.hash
+            this.postNameToAPI = url.substr(1,url.length)
+
+            let link = 'http://localhost/back-end/naukinTest/posts/'+ this.postNameToAPI
+            let res = await fetch(link)
+            this.post = await res.json()        //получаю данные в json
+            console.log(this.post[0].data)
+
+            let link2 = 'http://localhost/back-end/naukinTest/postswithout/'+this.postNameToAPI
+            let res2 = await fetch(link2)
+            this.posts = await res2.json()        //получаю данные в json
+            this.posts = this.posts.reverse()
+        }
 },
     async created(){
-        let url = window.location.hash
-        this.postNameToAPI = url.substr(1,url.length)
-
-        let link = 'http://localhost/back-end/naukinTest/posts/'+ this.postNameToAPI
-        let res = await fetch(link)
-        this.post = await res.json()        //получаю данные в json
-        console.log(this.post[0].data)
-
-        let link2 = 'http://localhost/back-end/naukinTest/postswithout/'+this.postNameToAPI
-        let res2 = await fetch(link2)
-        this.posts = await res2.json()        //получаю данные в json
-        this.posts = this.posts.reverse()
+      await this.getContent()
+    },
+    watch:{
+        async postName(){
+            this.postNameToAPI = this.postName()
+            await this.getContent()
+            document.location.reload()
+        }
     }
 })
