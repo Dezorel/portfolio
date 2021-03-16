@@ -15,7 +15,7 @@ let app = new Vue({
         let arrayOfStrings = url.split(' ')
         let result = arrayOfStrings.join('-')
         this.postName = this.translit(result)
-        document.location.assign(window.pathname + '?post=#' + this.postName)
+        document.location.assign('https://7brothers.ml/projects/naukin/blog/currentArticle/?post=#' + this.postName)
         document.location.reload()
     },
     translit(str){
