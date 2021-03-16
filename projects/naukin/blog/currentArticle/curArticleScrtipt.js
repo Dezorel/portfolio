@@ -3,20 +3,22 @@ let app = new Vue({
     data(){
         return{
             postName: '',
-            posts: null,
+            post: null, //конкретный пост который прсматриваем сейчас
+            posts:null  //все отсальные посты
         }
     },
     async created(){
         let url = window.location.hash
         this.postName = url.substr(1,url.length)
-        let arrayOfStrings = this.postName.split('-')       //это не нужно
-        let result = arrayOfStrings.join(' ').trim()        //это не нужно
-        console.log(result)
 
-
-        let link = 'https://jsonplaceholder.typicode.com/posts'
+        let link = 'http://localhost/back-end/naukinTest/posts/'+ this.postName
         let res = await fetch(link)
-        this.posts = await res.json()        //получаю данные в json
-        console.log(this.posts)
+        this.post = await res.json()        //получаю данные в json
+        console.log(this.post[0].data)
+
+        let link2 = 'http://localhost/back-end/naukinTest/posts'
+        let res2 = await fetch(link2)
+        this.posts = await res2.json()        //получаю данные в json
+        this.posts = this.posts.reverse()
     }
 })
