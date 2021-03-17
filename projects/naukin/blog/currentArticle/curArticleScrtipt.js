@@ -32,12 +32,12 @@ let app = new Vue({
             let url = window.location.hash
             this.postNameToAPI = url.substr(1,url.length)
 
-            let link = 'http://localhost/back-end/naukinTest/posts/'+ this.postNameToAPI
+            let link = 'http://localhost/github/back-end/naukinTest/posts/'+ this.postNameToAPI
             let res = await fetch(link)
             this.post = await res.json()        //получаю данные в json
             
 
-            let link2 = 'http://localhost/back-end/naukinTest/postswithout/'+this.postNameToAPI
+            let link2 = 'http://localhost/github/back-end/naukinTest/postswithout/'+this.postNameToAPI
             let res2 = await fetch(link2)
             this.posts = await res2.json()        //получаю данные в json
             this.posts = this.posts.reverse()
