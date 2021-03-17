@@ -28,7 +28,7 @@ let app = new Vue({
         },
     },
     created: async function (){
-            let link = 'http://localhost/github/back-end/naukinTest/posts/'
+            let link = 'http://localhost/github/back-end/naukinTest/posts'
             let res = await fetch(link)
             this.posts = await res.json()        //получаю данные в json
             this.posts = this.posts.reverse()
